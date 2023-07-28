@@ -1,0 +1,21 @@
+.optional-menu-modal {
+  .MuiDialog-container {
+    .MuiPaper-root {
+      .MuiDialogContent-root {
+        .content-modal {
+          padding: 0px;
+          .btn-container {
+            button {
+              max-width: 320px;
+              width: 100%;
+              background-image: unset;
+              @media (max-width: 600px) {
+                max-width: unset;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

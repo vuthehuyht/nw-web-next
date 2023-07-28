@@ -1,0 +1,35 @@
+.booking-management-heading {
+  .header-app-bar {
+    margin: 0;
+
+    .icon-angle-left {
+      color: #000;
+    }
+    .title {
+      margin: 0 0 0.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+  }
+  .title {
+    margin: 0 0 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+.booking-management-layout {
+  min-height: calc(100vh - 72px);
+
+  &__inner {
+    background-color: #f9f9f9;
+    min-height: calc(100vh - 152px);
+  }
+
+  .loading-box {
+    padding: 1rem;
+    text-align: center;
+  }
+}

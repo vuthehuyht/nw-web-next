@@ -1,0 +1,76 @@
+.header-app-bar {
+  position: relative;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  i {
+    font-size: 2rem;
+  }
+
+  .control-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    display: flex;
+    align-items: center;
+  }
+
+  .back-btn {
+    padding: 0;
+  }
+
+  .user-area {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 0.5rem;
+    cursor: pointer;
+
+    img { width: 100%; }
+  }
+
+  .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      margin: 0 0 0 0.75rem;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  }
+}
+
+.post-page .list-post,
+.menu-page .list-menu {
+  padding-bottom: 80px;
+  .menu-block {
+    .menu-details {
+      .menu-item {
+        width: 100%;
+        cursor: pointer;
+        color: #484848;
+      }
+    }
+  }
+}
+
+.my-nailist-bc.MuiContainer-root {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .my-nailist-bc.MuiContainer-root {
+    display: block;
+  }
+  .my-page {
+    position: relative;
+
+    .inner-my-page {
+      margin-top: -560px;
+    }
+  }
+}

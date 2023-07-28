@@ -1,0 +1,414 @@
+.static-page {
+  padding-top: 66px;
+  padding-bottom: 16px;
+  
+  &.faq-page {
+    min-height: calc(100vh - 335px)
+  }
+
+  .paragraph-wrapper {
+    margin-bottom: 32px;
+
+    .heading {
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 32px;
+    }
+
+    .inner,
+    .child-inner {
+      padding: 0 32px;
+      font-size: 0.875rem;
+      line-height: 1.71;
+    }
+
+    .child-inner {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin: 0;
+      margin-bottom: 24px;
+      line-height: 1.71;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &.mb-0 {
+        margin-bottom: 0;
+      }
+    }
+
+    &--no-heading {
+      .inner {
+        padding-left: 0;
+      }
+    }
+
+    &--last {
+      margin-bottom: 80px;
+      text-align: right;
+    }
+  }
+
+  .list-content {
+    margin-bottom: 80px;
+
+    p,
+    &-title {
+      margin: 0;
+    }
+
+    &-item {
+      display: flex;
+      padding: 34px 24px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    &-title {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.875rem;
+    }
+  }
+
+  .faq-list {
+    width: 100%;
+
+    .faq-question,
+    .faq-answer {
+      display: flex;
+      font-size: 14px;
+      line-height: 1.71;
+      font-family: 'Noto San JP', sans-serif;
+      width: 100%;
+
+      span {
+        font-weight: bold;
+        width: 20px;
+      }
+
+      p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.71;
+      }
+
+      .inner-answer {
+        width: calc(100% - 30px);
+      }
+    }
+
+    .MuiExpansionPanel-root {
+      border: none;
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    .MuiExpansionPanelSummary-root {
+      padding: 0;
+      min-height: auto;
+      &.Mui-expanded {
+        background: none;
+        border: none;
+      }
+    }
+
+    .MuiExpansionPanelSummary-content {
+      margin: 1rem 0;
+    }
+
+    .MuiExpansionPanelDetails-root {
+      background-color: rgba(0, 0, 0, .03);
+      padding: 20px 24px;
+    }
+  }
+
+  .text-red {
+    color: #e51a1a;
+  }
+
+  .text-underline {
+    text-decoration: underline;
+  }
+
+  .accordion-qa {
+    .MuiExpansionPanelDetails-root,
+    .MuiExpansionPanelSummary-root{
+      background-color: #fff;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .static-page {
+    padding-top: 166px;
+    padding-bottom: 80px;
+
+    .static-page-inner {
+      margin-left: 8.333333%;
+      flex: 0 0 83.333333%;
+      max-width: 83.333333%;
+    }
+
+    
+  }
+}
+
+@media (min-width: 1024px) {
+  .static-page {
+    .accordion-qa {
+      padding-bottom: 140px;
+    }
+  }
+}
+
+.static-page {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &.contact-wrapper {
+    padding-bottom: 80px;
+
+    .inner-block {
+      margin-top: 2rem;
+  
+      .MuiTypography-subtitle1 {
+        font-family: "Noto Sans JP", "Noto Serif JP", "Open Sans", sans-serif;
+        font-weight: bold;
+    
+        .required {
+          padding-left: 0.5rem;
+          color: $pink-red;
+          font-weight: normal;
+        }
+      }
+    }
+  
+    .MuiFilledInput-input,
+    .MuiFilledInput-multiline {
+      height: auto;
+      padding: 0.75rem 0.65rem;
+      font-size: 0.875rem;
+    }
+  
+    .MuiFilledInput-multiline .MuiFilledInput-input {
+      padding: 0;
+    }
+
+    .MuiFormControl-root {
+      width: 100%;
+  
+      .MuiFilledInput-root {
+        background-color: #f9f9f9;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+    
+    .MuiButton-root {
+      min-width: 200px;
+      font-family: "Noto Sans JP", "Noto Serif JP", "Open Sans", sans-serif;
+      padding: 0.75rem 1rem;
+    }
+  
+    .MuiGrid-grid-xs-12:last-child {
+      text-align: center;
+    }
+  }
+
+  &.faq-wrapper {
+    .accordion-qa {
+      margin-top: 80px;
+      padding-bottom: 80px;
+
+  
+      .MuiPaper-elevation1 {
+        box-shadow: none;
+      }
+  
+      .MuiPaper-root {
+        background-color: #fff;
+      }
+  
+      .MuiExpansionPanelSummary-content {
+        &.Mui-expanded {
+          margin: 12px 0
+        }
+      }
+  
+      .MuiExpansionPanelDetails-root {
+        padding: 1rem 64px;
+      }
+    }
+  
+    .faq-list {
+      width: 100%;
+  
+      .faq-question,
+      .faq-answer {
+        display: flex;
+        font-size: 14px;
+        line-height: 1.71;
+        font-family: 'Noto San JP', sans-serif;
+        width: 100%;
+  
+        span {
+          font-weight: bold;
+          width: 20px;
+        }
+  
+        p {
+          margin: 0;
+          font-size: 14px;
+          line-height: 1.71;
+        }
+  
+        .inner-answer {
+          width: calc(100% - 30px);
+        }
+      }
+  
+      .MuiExpansionPanel-root {
+        border: none;
+  
+        &:last-child {
+          border: none;
+        }
+      }
+  
+      .MuiExpansionPanelSummary-root {
+        padding: 0;
+        min-height: auto;
+        &.Mui-expanded {
+          background: none;
+          border: none;
+        }
+      }
+  
+      .MuiExpansionPanelSummary-content {
+        margin: 1rem 0;
+      }
+  
+      .MuiExpansionPanelDetails-root {
+        background-color: rgba(0, 0, 0, .03);
+        padding: 20px 24px;
+      }
+    }
+  }
+
+  .table {
+    margin: 0;
+    table {
+      width: 100%;
+    }
+
+    tr {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid #ddd;
+      padding: 1rem;
+      td {
+        &:first-child {
+          font-size: 1rem;
+        }
+        &:last-child {
+          font-size: .875rem;
+          padding: 12px 0 0 1rem;
+        }
+      }
+    }
+  }
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 32px;
+  .hero__title {
+    font-size: 37px;
+    font-family: 'Senlot';
+    margin-bottom: 6px;
+    color: #484848;
+  }
+  .hero__subtitle {
+    font-size: 1rem;
+    font-family: 'Senlot';
+    color: #484848;
+  }
+}
+
+.static-page-inner {
+  &.terms, &.privacy-policies {
+    .table table {
+      display: table;
+      width: auto;
+      tr {
+        display: table-row;
+        padding: 0;
+        border-color: transparent;
+        vertical-align: middle;
+        td {
+          padding: 0;
+          width: auto;
+          font-size: .875rem;
+        }
+      }
+    }
+    p {
+      font-size: .875rem;
+      line-height: 1.71;
+    }
+    ul {
+      list-style: none;
+      padding: 0 32px;
+      font-size: .875rem;
+      line-height: 1.71;
+      li {
+        margin: 24px 0;
+
+        i {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .static-page {
+    padding-top: 66px;
+
+    .table {
+      tr {
+        flex-direction: row;
+        td {
+          padding: 16px 8px;
+          &:first-child {
+            width: 33.333333%;
+          }
+          &:last-child {
+            width: 66%;
+
+            p { margin-top: 0 }
+          }
+        }
+      }
+    }
+  }
+
+  .hero-section {
+    .hero__title {
+      font-size: 3.5rem;
+      margin-bottom: 8px;
+    }
+  }
+}

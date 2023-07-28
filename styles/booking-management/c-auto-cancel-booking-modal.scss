@@ -1,0 +1,44 @@
+.auto-cancel-booking-modal {
+  .MuiDialog-container {
+    .MuiPaper-root {
+      min-height: 70%;
+      .MuiDialogContent-root {
+        .content-modal {
+          padding: 24px 35px 24px;
+          @media (max-width: 600px) {
+            padding: 24px 16px;
+          }
+          .booking-info-container {
+            padding-top: 24px;
+            .nailist-information {
+              .MuiAvatar-root {
+                width: 80px;
+                height: 80px;
+                @media (max-width: 600px) {
+                  width: 56px;
+                  height: 56px;
+                }
+              }
+              .booking-time {
+                .nailist-name {
+                  font-size: 24px;
+                }
+              }
+            }
+            .booking-info {
+              margin-top: 1.5rem;
+            }
+            .dark-box {
+              padding: 16px;
+              border-radius: 4px;
+              background-color: rgba(#efefef, 0.4);
+              @media (max-width: 600px) {
+                padding: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.MuiContainer-root.sms-auth-container {
+  padding: 70px 16px 16px;
+  max-width: 1140px;
+  .sms-auth--form {
+    .phone-input-container {
+      justify-content: center;
+    }
+    .submit-btn {
+      width: 100%;
+      max-width: 320px;
+      margin-top: 40px;
+      background-image: unset;
+    }
+  }
+  .sms-auth--otp {
+    .helper-text {
+      max-width: 736px;
+      text-align: center;
+      margin: 0 auto;
+      white-space: pre-line;
+      font-family: "Noto Sans JP", "Noto Serif JP", "Open Sans", sans-serif;
+    }
+    .ghost-btn-container {
+      .ghost-secondary-btn {
+        margin: 4px
+      }
+    }
+  }
+};
+
+@media (max-width: 375px) {
+  .MuiContainer-root.sms-auth-container {
+    padding: 24px 16px;
+    .sms-auth--form {
+      .submit-btn {
+        max-width: unset;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .MuiContainer-root.sms-auth-container {
+    .sms-auth--form {
+      .phone-input-container {
+        .MuiGrid-root.input-item {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+}

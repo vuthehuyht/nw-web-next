@@ -1,0 +1,239 @@
+.confirm-complete {
+  background-color: #f9f9f9;
+  min-height: calc(100vh - 60px);
+  padding: 24px 0px;
+  width: 100%;
+  .title {
+    margin-bottom: 1.5rem;
+
+    h2 {
+      font-size: 37px;
+      font-weight: normal;
+    }
+    h6 {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  .MuiTypography-root {
+    text-align: center;
+  }
+  .qr-code {
+    display: none;
+  }
+
+  .first-heading,
+  .second-heading {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .first-heading {
+    margin-bottom: 8px;
+  }
+
+  .second-heading {
+    margin-bottom: 24px;
+  }
+
+  .inner-wrapper {
+    border-radius: 30px;
+    box-shadow: 0 2px 8px 0 rgba(181, 181, 181, 0.15);
+    background-color: #fff;
+    padding: 12px;
+    min-height: 300px;
+    background-image: url('../public/assets//images/bg@2x.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .box-complete {
+    margin: 0 auto;
+  }
+
+  .MuiButton-root {
+    margin-top: 1.5rem;
+    height: 48px;
+    width: 100%;
+    max-width: 331px;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  .normal-text {
+    margin-top: 16px;
+  }
+  .note-text {
+    font-size: 13px;
+  }
+}
+
+.request-complete {
+  .image-box {
+    text-align: center;
+    img {
+      width: 100%;
+      height: 150px;
+    }
+  }
+  .inner-wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .first-pink-text {
+    margin-top: 24px;
+  }
+  .first-note {
+    margin-top: 8px;
+    font-weight: bold;
+  }
+}
+
+.reservation-complete {
+  .avatar {
+    margin: 0 auto 1.5rem;
+    width: 96px;
+    height: 96px;
+  }
+  .first-note {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .inner-wrapper {
+    position: relative;
+    background-color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url('../public/assets//images/bg@2x.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    .content {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      min-height: 290px;
+      .first-note {
+        margin-top: 8px;
+        line-height: normal;
+      }
+      .pc-note {
+        font-size: 16px;
+        line-height: normal;
+        font-weight: bold;
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .confirm-complete {
+    min-height: calc(100vh - 361px);
+    padding-top: 70px;
+
+    .title {
+      margin-bottom: 2rem;
+
+      h2 {
+        font-size: 56px;
+      }
+    }
+
+    .pink-text {
+      margin-top: 40px;
+    }
+
+    .first-heading,
+    .second-heading {
+      font-size: 1.5rem;
+    }
+
+    .first-heading {
+      margin-bottom: 0.5rem;
+    }
+
+    .box-complete {
+      max-width: 736px;
+    }
+
+    .inner-wrapper {
+      padding: 56px;
+      text-align: center;
+    }
+
+    .MuiButton-root {
+      margin: 40px auto 0;
+      width: 320px;
+    }
+
+    .qr-code {
+      border-radius: 16px;
+      border: solid 1px #484848;
+      height: 160px;
+      width: 160px;
+      margin: 24px auto 0;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    .normal-text {
+      margin-top: 24px;
+    }
+    .note-text {
+      font-size: 16px;
+    }
+  }
+
+  .request-complete {
+    .image-box {
+      img {
+        width: auto;
+        height: 180px;
+      }
+    }
+
+    .second-heading {
+      margin-bottom: 40px;
+    }
+    .first-pink-text {
+      margin-top: 40px;
+    }
+  }
+
+  .reservation-complete {
+    .avatar {
+      width: 140px;
+      height: 140px;
+    }
+    .second-heading {
+      margin-bottom: 32px;
+    }
+    .first-note {
+      margin-bottom: 24px;
+    }
+
+    .bg-img {
+      width: 100%;
+      height: 320px;
+    }
+    .content {
+      min-height: 350px;
+    }
+    .inner-wrapper {
+      .content {
+        .mobile-note {
+          display: none;
+        }
+        .pc-note {
+          display: block;
+        }
+      }
+    }
+  }
+}

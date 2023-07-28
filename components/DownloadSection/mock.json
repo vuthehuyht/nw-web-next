@@ -1,0 +1,14 @@
+[
+  {
+    "type": "iOS",
+    "title": "app store",
+    "href": "https://apps.apple.com/jp/app/id1251330322?ls=1&mt=8",
+    "thumb": "/assets/images/ios.svg"
+  },
+  {
+    "type": "android",
+    "title": "google play",
+    "href": "https://play.google.com/store/apps/details?id=jp.nailie.app.android",
+    "thumb": "/assets/images/android.svg"
+  } 
+]

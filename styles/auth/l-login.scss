@@ -1,0 +1,90 @@
+.MuiContainer-root.login-container {
+  padding: 70px 16px 16px;
+  max-width: 1140px;
+  @media (max-width: 375px) {
+    padding: 24px 16px;
+  }
+  .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedSecondary {
+    background-image: unset;
+    max-width: 320px;
+    width: 100%;
+    @media (max-width: 375px) {
+      max-width: unset;
+    }
+  }
+  .helper-text {
+    max-width: 736px;
+    text-align: center;
+    margin: 0 auto;
+    white-space: pre-line;
+    margin-top: 24px;
+    p.MuiTypography-root.MuiTypography-body2 {
+      font-family: "Noto Sans JP", "Noto Serif JP", "Open Sans", sans-serif;
+    }
+  }
+  .login--form {
+    .text-field-container {
+      justify-content: center;
+    }
+    .remember-checkbox {
+      margin-top: 16px;
+      padding-left: 12px;
+      @media (max-width: 375px) {
+        padding-left: 0px;
+      }
+      .MuiFormControlLabel-root {
+        margin-top: 16px;
+        margin: 0;
+        .MuiCheckbox-root {
+          padding: 0;
+          color: #ddd;
+          transform: scale(calc(4/3));
+          &.Mui-checked {
+            color: #484848;
+          }
+        }
+        .MuiTypography-root {
+          margin-left: 8px;
+          font-size: 14px;
+          line-height: 1.57;
+          font-family: "Noto Sans JP", "Noto Serif JP", "Open Sans", sans-serif;
+        }
+      }
+    }
+  }
+  .register--email-authentication {
+    .ghost-btn-container {
+      button {
+        margin: 0 4px;
+      }
+    }
+  }
+  .sms-auth--otp {
+    .ghost-btn-container {
+      button {
+        margin: 4px;
+      }
+    }
+  }
+  .confirm-text {
+    margin-top: 24px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1280px) {
+  .MuiContainer-root.login-container {
+    .login--form {
+      .label-container {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      .remember-checkbox {
+        padding-left: 30px;
+      }
+      .MuiFormControl-root {
+        padding-left: 18px;
+      }
+    }
+  }
+}

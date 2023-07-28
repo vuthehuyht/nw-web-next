@@ -1,0 +1,64 @@
+.confirm-modal-container {
+  .MuiDialog-container {
+    .MuiPaper-root {
+      width: 100%;
+      max-width: 546px;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px 0 rgba(181, 181, 181, 0.15);
+      .MuiDialogTitle-root {
+        padding: 16px 16px 23px;
+        text-align: center;
+        position: relative;
+        background: url('/assets/images/2lines.svg') bottom repeat-x;
+        .MuiTypography-root {
+          line-height: 24px;
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+      .MuiDialogContent-root {
+        padding: 32px 16px;
+        .content-modal {
+          text-align: center;
+          white-space: pre-line;
+          font-size: 14px;
+          color: #484848;
+        }
+      }
+      .MuiDialogActions-root {
+        justify-content: center;
+        padding: 0px 16px 40px 16px;
+        button {
+          width: 100%;
+          max-width: 320px;
+          border-radius: 4px;
+        }
+        .cancel-btn {
+          margin-right: 16px;
+          border: solid 1px #484848;
+        }
+        .confirm-btn {
+          width: 100%;
+          background-image: unset;
+          background-color: #e5004e;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .confirm-modal-container {
+    .MuiDialog-container {
+      .MuiPaper-root {
+        margin: 15px;
+        .MuiDialogContent-root {
+          padding: 24px 16px;
+        }
+        .MuiDialogActions-root {
+          padding: 0px 16px 16px 16px;
+        }
+      }
+    }
+  }
+}

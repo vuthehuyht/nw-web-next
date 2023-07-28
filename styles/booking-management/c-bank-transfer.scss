@@ -1,0 +1,98 @@
+.bank-transfer {
+  .bank-flow-info {
+    border-radius: 30px;
+    border: solid 1px #b7b7b7;
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+
+    .title, .subtitle {
+      font-weight: bold;
+    }
+
+    .subtitle {
+      margin-top: 1.5rem;
+    }
+
+    .flow-content {
+      font-size: 0.875rem;
+      margin-top: 0.5rem;
+      p {
+        margin: 0.5rem 0;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+      span {
+        color: #e54152;
+      }
+      a {
+        color: #0f99fa;
+        font-size: 1rem;
+        font-weight: bold;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .bank-account-info {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    .title {
+      border-radius: 18px;
+      background-color: #c6c6c6;
+      font-size: 0.875rem;
+      font-weight: bold;
+      display: inline-block;
+      text-align: center;
+      padding: 0.5rem 1.5rem;
+      line-height: 1;
+      margin-bottom: 1.5rem;
+    }
+
+    .bank-account-content {
+      border-radius: 4px;
+      border: 1px solid #b7b7b7;
+    }
+
+    .table {
+      th {
+        width: 30%;
+        border-right: 1px solid #b7b7b7;
+      }
+
+      .MuiTableCell-root {
+        border-bottom: 1px solid #b7b7b7;
+      }
+
+      .MuiTableRow-root:last-child {
+        th, td {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  .note {
+    text-align: center;
+    color: #f44336;
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bank-transfer {
+    .bank-flow-info {
+      padding: 2rem 1.5rem;
+    }
+  }
+
+  .bank-account-info {
+    .table {
+      th {
+        width: 20%;
+      }
+    }
+  }
+}

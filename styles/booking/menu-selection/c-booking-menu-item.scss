@@ -1,0 +1,72 @@
+.booking-menu-item {
+  padding: 20px 16px 18px 16px;
+  box-shadow: inset 0 -1px 0 0 #dddddd;
+  .MuiFormControlLabel-root {
+    margin: 0;
+    align-items: unset;
+    width: 100%;
+    .MuiCheckbox-root {
+      padding: 0;
+      margin-right: 8px;
+      height: 32px;
+      .icon-round-checked {
+        color: #e5004e;
+        font-size: 32px;
+        padding: 0
+      }
+      .icon-uncheck {
+        color: #DDD;
+        font-size: 32px;
+        padding: 0;
+      }
+    }
+    .MuiFormControlLabel-label {
+      width: 100%;
+      .menu-item-label-container {
+        display: flex;
+        .item-image-container {
+          margin-right: 12px;
+          img {
+            border-radius: 4px;
+            width: 80px;
+            height: 80px;
+          }
+        }
+        .menu-item-info {
+          flex: 1;
+          .menu-tag-container {
+            margin-right: 8px;
+          }
+          .menu-item-title {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: normal;
+            color: #484848;
+            word-break: break-all;
+          }
+          .menu-item-time {
+            color: #c6c6c6;
+            margin-top: 9px;
+            line-height: normal;
+          }
+          .menu-item-price {
+            font-weight: bold;
+            color: #484848;
+          }
+          .menu-item-detail {
+            color: #484848;
+            margin-top: 6px;
+            line-height: normal;
+            word-break: break-all;
+            white-space: pre-line;
+          }
+        }
+      }
+    }
+  }
+  .image-label {
+    .MuiCheckbox-root {
+      margin-top: 24px;
+    }
+  }
+}

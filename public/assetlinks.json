@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "jp.co.hidesigns.nailie",
+    "sha256_cert_fingerprints":
+    ["3C:8D:E2:D5:FF:15:93:74:30:BD:DC:94:5A:61:A2:3C:B1:D8:8B:1D:00:DA:1B:BF:83:A5:7E:42:59:45:2E:1C"]
+  }
+}]

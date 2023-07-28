@@ -1,0 +1,55 @@
+.download-page {
+  padding: 52px 16px;
+  background-color: #f9f9f9;
+  min-height: calc(100vh - 290px);
+  .download-box {
+    border-radius: 30px;
+    box-shadow: 0 2px 8px 0 rgba(181, 181, 181, 0.15);
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 764px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 52px 16px;
+    > img {
+      margin-bottom: 16px;
+    }
+    .support-text {
+      margin-top: 16px;
+      max-width: 396px;
+      color: #626262;
+    }
+    .download-content {
+      margin-top: 24px;
+      padding: 24px 24px 32px;
+      border-radius: 22px;
+      max-width: 444px;
+      background-color: #f4f4f4;
+      .nailie-logo {
+        width: 60px;
+        height: 60px;
+        margin-right: 16px;
+      }
+      .download-title {
+        margin-top: 4px;
+        font-size: 22px;
+        margin-bottom: 3px;
+      }
+      .MuiDivider-root {
+        margin-top: 16px;
+      }
+      .qr-code {
+        border-radius: 16px;
+        border: solid 1px #484848;
+        height: 160px;
+        width: 160px;
+        margin: 24px auto 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: #fff;
+      }
+    }
+  }
+}

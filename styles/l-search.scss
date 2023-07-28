@@ -1,0 +1,549 @@
+.advanced-search-box {
+  display: block;
+  border-radius: 4px;
+  border: solid 1px #eeeeee;
+  background-color: #ffffff;
+  margin-bottom: 0.5rem;
+  
+  .MuiTypography-root {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    i {
+      font-size: 1.5rem;
+    }
+
+    span {
+      font-size: 0.875rem;
+      margin-left: 0.5rem;
+      display: inline-block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .inner-advanced-search {
+    border-bottom: solid 1px #eeeeee;
+    padding: 1.25rem;
+  }
+
+  .btn-control {
+    padding: 0 1.25rem;
+    text-align: center;
+
+    button {
+      padding: 0.5rem;
+    }
+  }
+}
+.advanced-search-form {
+  display: none;
+  margin-right: 1rem;
+
+  &.search-popup {
+    display: block;
+    margin: 0;
+  }
+
+  .MuiTypography-root {
+    display: flex;
+    align-items: center;
+    line-height: 2.75rem;
+    margin-bottom: 0.5rem;
+
+    i {
+      font-size: 1.5rem;
+    }
+
+    span {
+      font-size: 0.875rem;
+      font-weight: bold;
+      margin-left: 0.25rem;
+    }
+  }
+
+  .MuiButton-contained {
+    // padding: 0.75rem;
+    width: 100%;
+    // font-weight: bold;
+    margin-top: 1.25rem;
+    // background-color: #e5004e;
+  }
+
+  .price-box {
+    padding-top: 3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    &.disabled {
+      .price-lable {
+        color: rgba(0, 0, 0, 0.12);
+      }
+      .input-range .input-range__track--active {
+        background: rgba(0,145,147, 0.2);
+      }
+
+      .input-range.input-range--disabled .input-range__track {
+        background: #eeeeee;
+      }
+    }
+  }
+
+  .salon-box {
+    .MuiToggleButton-root.Mui-selected + .MuiToggleButton-root.Mui-selected {
+      margin-left: 0.25rem;
+      border: 1px solid transparent;
+    }
+
+    .MuiToggleButtonGroup-root {
+      display: flex;
+      flex-wrap: wrap;
+      button {
+        width: calc(25% - 0.5rem);
+        -webkit-tap-highlight-color:transparent;
+        &:active, &:focus, &:hover, &:visited {
+          -webkit-tap-highlight-color: transparent;
+        }
+      }
+    }
+
+    .MuiButtonBase-root {
+      margin: 0.25rem;
+      border-radius: 8px;
+      padding: 0;
+      border-color: transparent;
+      font-size: 0.875rem;
+      line-height: 2rem;
+      width: 60px;
+      height: 83px;
+
+      .salon-type {
+        font-size: 0.625rem;
+        font-weight: bold;
+        color: #484848;
+        line-height: 1.5;
+        padding: 0.25rem 0;
+      }
+
+      .images {
+        height: 48px;
+        img {
+          width: 48px;
+          height: 48px;
+        }
+        img.selected {
+          display: none;
+        }
+      }
+
+      &:hover {
+        background: none;
+      }
+
+      &.Mui-selected {
+        background: none;
+
+        .images {
+          img.normal {
+            display: none;
+          }
+          img.selected {
+            display: block;
+          }
+        }
+
+        .salon-type {
+          color: #009193;
+        }
+      }
+
+      &.Mui-disabled {
+        .images {
+          img.normal {
+            opacity: 0.2;
+          }
+          img.selected {
+            opacity: 0.2;
+          }
+        }
+        .salon-type {
+          color: rgba(0, 0, 0, 0.12);
+        }
+      }
+    }
+
+    .MuiToggleButton-label {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100%;
+    }
+
+    .inner-salon-box {
+      text-align: center;
+    }
+  }
+
+  .menu-box {
+    .MuiToggleButtonGroup-root {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .MuiButtonBase-root {
+      margin: 0.25rem;
+      border-radius: 16px;
+      padding: 0 0.5rem;
+      border: solid 1px #ddd;
+      font-size: 0.875rem;
+      line-height: 2rem;
+      color: #484848;
+
+      &.Mui-selected {
+        background-color: #009193;
+        color: #fff;
+      }
+
+      &.Mui-disabled {
+        color: rgba(0, 0, 0, 0.12);
+        &.Mui-selected{
+          background-color: rgba(0,145,147, 0.2);
+        }
+      }
+    }
+  }
+
+  .location-box, .menu-box {
+    margin-bottom: 2rem;
+  }
+
+  .salon-box, .menu-box {
+    &.disabled > .MuiTypography-root {
+      color: rgba(0, 0, 0, 0.12);
+
+      img {
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(100%); /* Google Chrome, Safari 6+ & Opera 15+ */
+        filter: grayscale(100%); /* Microsoft Edge and Firefox 35+ */
+        filter: brightness(3);
+      }
+    }
+  }
+}
+.advanced-search-popup {
+  margin-bottom: 2rem;
+
+  & > button {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    .MuiButton-label {
+      width: 100%;
+    }
+  }
+
+  .advanced-search-button {
+    width: 100%;
+    line-height: 48px;
+    padding: 0 1rem;
+    border-radius: 24px;
+    box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+  .search-text-field {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    // margin: 0 1.5rem 1.5rem 1.5rem;
+    span {
+      font-size: 0.875rem;
+      margin-left: 0.5rem;
+    }
+    i {
+      font-size: 1rem;
+    }
+  }
+
+  .MuiTouchRipple-root {
+    &:focus {
+      border: none;
+      outline: none;
+    }
+    .MuiTouchRipple-ripple {
+      display: none;
+      &:first-child {
+        display: block;
+      }
+    }
+  }
+}
+
+.search-dialog {
+  .MuiDialog-paper {
+    margin: 0;
+    background-color: #fff;
+  }
+  .MuiDialog-paperScrollPaper {
+    max-height: 100%;
+  }
+  .MuiPaper-rounded {
+    border-radius: 0;
+  }
+  .content-modal {
+    overflow: hidden;
+  }
+}
+
+.empty-search-nailist {
+  text-align: center;
+  margin-bottom: 2rem;
+  img {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  p {
+    font-size: 0.875rem;
+    margin: 0;
+    color: #858585;
+  }
+}
+
+.search-page {
+  background: #f9f9f9;
+  min-height: calc(100vh - 291px);
+  .search-breadcrumbs {
+    background-color: #fff;
+    a {
+      line-height: 2.5rem;
+      display: inline-block;
+      font-weight: bold;
+      font-size: 0.75rem;
+    }
+
+    .breadcrumbs {
+      ol {
+        list-style: none;
+        display: flex;
+        align-items: center;
+      }
+
+      li:last-child {
+        white-space: pre-wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+    }
+
+    .makeStyles-root-8{
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  .search-wrapper {
+    padding-top: 1.25rem;
+  }
+
+  .result-wrapper {
+    .manicurist-card {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .filter-title {
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    color: #aaa;
+    border-bottom: 1px solid #ddd;
+    display: none;
+  }
+}
+
+.heading-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0 0.5rem;
+
+  .total-result {
+    font-size: 1rem;
+    span { font-weight: bold; }
+  }
+
+  .sort-field {
+    .text-field-label { display: none; }
+    .select-field .MuiSelect-icon {
+      width: 1.25rem;
+    }
+
+    .select-field {
+
+      .MuiSelect-root {
+        border: 1px solid #484848;
+        border-radius: 4px;
+        font-size: 14px;
+        padding-top: 0.875rem;
+        padding-bottom: 0.875rem;
+        padding-left: 1rem;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .empty-search-nailist {
+    img {
+      width: auto;
+    }
+  }
+  .advanced-search-form .salon-box .MuiToggleButtonGroup-root button {
+    width: calc(20% - 0.5rem);
+  }
+}
+
+@media screen and (min-width: 761px) {
+  .advanced-search-popup {
+    text-align: center;
+    margin-bottom: 40px;
+    button {
+      max-width: 665px;
+      margin: 0 auto;
+    }
+
+    .advanced-search-button {
+      line-height: 64px;
+      border-radius: 40px;
+      box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.21);
+    }
+  }
+
+  .advanced-search-form.search-popup {
+    form {
+      text-align: center;
+    }
+    .price-box {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    button.MuiButton-contained {
+      max-width: 340px;
+      margin: 1.25rem auto 0;
+    }
+  }
+
+  .advanced-search-form .salon-box {
+    .MuiButtonBase-root {
+      margin-left: 0.688rem;
+      margin-right: 0.688rem;
+      &:hover {
+        .salon-type {
+          color: #009193;
+        }
+      }
+    }
+
+    .MuiToggleButton-root.Mui-selected + .MuiToggleButton-root.Mui-selected {
+      margin-left: 0.688rem;
+      margin-right: 0.688rem;
+    }
+
+    .MuiToggleButtonGroup-root button {
+      width: calc(12.5% - 1.376rem);
+    }
+  }
+
+  .search-page {
+    .search-breadcrumbs {
+      .makeStyles-root-1 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .breadcrumbs li:last-child {
+        max-width: 73%;
+        p { font-size: 0.75rem; }
+      }
+    }
+
+    .filter-title {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .search-page .search-wrapper {
+    padding-top: 0;
+    .advanced-search-form {
+      padding-bottom: 2.5rem;
+    }
+    .advanced-search-form .salon-box .MuiToggleButtonGroup-root button {
+      width: calc(20% - 1.376rem);
+    }
+  }
+  .advanced-search-box {
+    display: none;
+  }
+  .advanced-search-form {
+    display: block;
+  }
+  .search-dialog {
+    .content-modal {
+      padding: 2rem 2.5rem 2.5rem;
+    }
+
+    .MuiDialog-paper {
+      margin: 32px;
+    }
+    .MuiDialog-paperScrollPaper {
+      max-height: calc(100% - 64px);
+    }
+    .MuiPaper-rounded {
+      border-radius: 4px;
+    }
+
+    .search-popup {
+      .form-block {
+        display: flex;
+        justify-content: space-between;
+        & > .MuiBox-root {
+          width: 48%;
+        }
+      }
+    }
+  }
+
+  .heading-result {
+    margin-top: 0;
+    margin-bottom: 0;
+    background: url(/assets/images/2lines.svg) bottom repeat-x;
+
+    .sort-field {
+      padding: 1rem 0;
+      display: flex;
+      align-items: center;
+
+      .text-field-label { display: inline-block; margin-right: 0.5rem; }
+
+      .MuiFormLabel-root.text-field-label { display: none; }
+    }
+  }
+}

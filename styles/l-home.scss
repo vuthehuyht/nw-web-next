@@ -1,0 +1,553 @@
+.home-wrapper {
+  .block {
+    padding: 3rem 0 2rem;
+    &.block--full {
+      padding: 0;
+    }
+  }
+  .block.location-block {
+    padding: 0;
+  }
+  .block.campaigns-block {
+    padding-bottom: 0.875rem;
+    .MuiGrid-container {
+      justify-content: center;
+    }
+  }
+
+  .block.recommend-block {
+    background-color: #f4f4f4;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/*
+* Download App Banner
+*/
+.banner-download-app {
+  position: relative;
+  background-image: linear-gradient(to bottom, #ec467e, #e50250);
+  margin-top: 22rem;
+
+  .MuiContainer-root {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    flex-direction: column-reverse;
+  }
+
+  .content-d-app {
+    .content-row {
+      .download-sec {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+
+      .download-button {
+        margin: 0 0.25rem;
+        img {
+          width: 160px;
+        }
+      }
+    }
+
+    .title {
+      color: #fff;
+      text-align: center;
+
+      span { display: block;}
+      .first {
+        font-size: 1.25rem;
+      }
+      .second {
+        font-size: 1.75rem;
+      }
+    }
+
+    .progress-sec {
+      display: none;
+      list-style: none;
+      color: white;
+      padding: 0;
+      justify-content: space-around;
+      margin: 2rem 0;
+  
+      li {
+        padding-right: 48px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+  
+        &:after {
+          font-family: 'icomoon' !important;
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          -webkit-font-smoothing: antialiased;
+
+          content: "\e915"; // icon horizontal
+          position: absolute;
+          right: 8px;
+          top: 27%;
+          transform: translateY(-50%);
+          font-size: 10px;
+        }
+  
+        &:last-child {
+          padding: 0;
+          &:after {
+            display: none;
+          }
+        }
+      }
+
+      span {
+        text-align: center;
+        max-width: 167px;
+        &.icon {
+          margin-right: 0;
+        }
+        &.text {
+          margin-top: 0.5rem;
+          font-size: 0.875rem;
+        }
+      }
+
+      .icon {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 50%;
+        background: white;
+        width: 2rem;
+        height: 2rem;
+        font-size: 2rem;
+        color: $text-color;
+        margin-right: 8px;
+      }
+    }
+
+
+  }
+
+  .img-d-app {
+    width: 296px;
+    margin: -22rem auto 0;
+    
+    img { width: 100%; }
+  }
+
+  .title {
+    color: #fff;
+  }
+}
+
+/*
+* Banner Page
+*/
+.banner-page {
+  position: relative;
+  height: 269px;
+
+  &::before {
+    content: '';
+    background-color: #dddddd;
+    width: calc(100% - 2rem);
+    height: 98%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  img {
+    position: relative;
+    width: 100%;
+  }
+}
+
+/*
+* Locations Block
+*/
+.locations-wrapper {
+  position: relative;
+  margin-top: -5rem;
+
+  .recommend-wrapper {
+    position: relative;
+    overflow: hidden;
+
+    .region-wrapper,
+    .prefecture-wrapper {
+      padding: 1rem 0 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      background: #fff url('/assets/images/map.svg') no-repeat center center;
+      // width: 100vh;
+    }
+
+    .location-box {
+      width: calc(100% / 3);
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+
+      &:focus {
+        outline: none;
+      }
+
+      &.text-box {
+        width: 65%;
+        overflow: hidden; 
+        justify-content: flex-start;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    .location-item {
+      margin: 0;
+      padding: 0;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      color: #fff;
+      text-align: center;
+      background: #fa968e;
+      border: solid 3px #f4a9a7;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+
+      span.MuiButton-label {
+        flex-wrap: wrap;
+
+        span {
+          display: block;
+          word-spacing: 25px;
+          padding: 0;
+        }
+      }
+
+      i { font-size: 1.5rem; }
+      span {
+        font-size: 0.875rem;
+        font-weight: 500;
+        padding: 0 1rem;
+        text-align: center;
+      }
+
+      &.hidden-item {
+        border-color: transparent;
+        background: transparent;
+        cursor: initial;
+      }
+
+      &.first-item {
+        background: none;
+        border: 1px solid #ddd;
+        color: #484848;
+
+        .icon-angle-left {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    .react-multiple-carousel__arrow {
+      display: none;
+    }
+
+    .MuiContainer-root {
+      padding: 0
+    }
+  }
+
+  .desktop-carousel.recommend-wrapper {
+    .region-wrapper, .prefecture-wrapper {
+      background: none;
+    }
+    .location-item {
+      height: 65px;
+      width: 65px;
+    }
+    .MuiButtonBase-root.MuiIconButton-root {
+      position: absolute;
+      top: 0;
+      z-index: 5;
+    }
+    .slick-list {
+      padding: 4rem 0 0;
+    }
+    .btn-next {
+      right: 0;
+    }
+    .btn-prev {
+      right: 4rem;
+    }
+
+    .loading-wrapper {
+      margin-top: 60px;
+      width: 100%;
+      text-align: center;
+    }
+    .region-wrapper,
+    .prefecture-wrapper {
+      position: relative;
+      // display: flex;
+      // flex-direction: column;
+      .inner-prefecture,
+      .inner-region {
+        width: 100%;
+      }
+      & > .location-box {
+        position: absolute;
+        left: 0;
+        z-index: 6;
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+
+        .first-item {
+          font-size: 1.25rem;
+
+          i {
+            transform: rotate(90deg);
+            font-size: 2.5rem;
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+
+    .prefecture-wrapper {
+      .location-box {
+        padding: 0;
+        button { padding: 0.5rem 1rem; }
+        .MuiButton-label { line-height: 1; }
+      }
+    }
+  }
+}
+
+.location-popup {}
+
+.block--heading {
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 2rem;
+
+  .banner-section {
+    #image-div {
+      position: relative;
+      height: 200px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .title-page {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.main-visual.banner-home {
+  .desktop, .mobile {
+    background-color: #d8d8d8;
+  }
+  .desktop {
+    max-width: 1440px;
+  }
+  // .mobile {
+  //   min-height: 400px;
+  // }
+}
+
+@media (min-width: 375px) {
+  .locations-wrapper {
+    .recommend-wrapper {
+      .MuiContainer-root {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .location-box {
+        padding: 0.75rem;
+      }
+  
+      .location-item {
+        // margin: 1rem;
+        width: 90px;
+        height: 90px;
+      }
+    }
+  }
+}
+
+@media (min-width: 414px) {
+  .locations-wrapper {
+    .recommend-wrapper {
+      .location-box {
+        padding: 1rem;
+      }
+
+      .location-item {
+        width: 92px;
+        height: 92px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 761px) {
+  .locations-wrapper {
+    margin-top: -6.5rem;
+    .desktop-carousel.recommend-wrapper {
+      .location-item {
+        height: 100px;
+        width: 100px;
+
+        // span.MuiButton-label {
+        //   span {
+        //     word-spacing: 22px;
+        //   }
+        // }
+      }
+    }
+  }
+}
+
+@media (min-width: 980px) {
+  .home-wrapper {
+    // .recomment-section {
+    //   padding-left: 1.5rem;
+    //   padding-right: 1.5rem;
+    // }
+  }
+  .banner-download-app {
+    margin: 4.25rem 0;
+   
+    .MuiContainer-root {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  
+    .content-d-app {
+      padding-top: 2rem;
+  
+      .content-row {
+        display: flex;
+        align-items: flex-end;
+        .download-sec {
+          margin-bottom: 0;
+        }
+      }
+
+      .title {
+        text-align: left;
+        margin: 0;
+  
+        .first {
+          font-size: 1.75rem;
+        }
+        .second {
+          font-size: 2.75rem;
+        }
+      }
+  
+      .progress-sec {
+        display: flex;
+        margin: 1.5rem 0 2rem;
+        li {
+          &:last-child {
+            padding: 0;
+            &:after {
+              display: none;
+            }
+          }
+        }
+  
+        span {
+          &.text {
+            display: block;
+          }
+        }
+  
+        .icon {
+          width: 48px;
+          height: 48px;
+          font-size: 2.5rem;
+        }
+      }
+    }
+  
+    .img-d-app {
+      width: 296px;
+      margin: -4.25rem -0.85rem -4.25rem 0;
+      
+      img { width: 100%; }
+    }
+  }
+
+  .banner-page {
+    text-align: center;
+    height: 480px;
+
+    &::before {
+      width: 65%;
+      left: 50%;
+    }
+    img {
+      width: initial;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .locations-wrapper {
+    .desktop-carousel.recommend-wrapper {
+      .location-item {
+        height: 140px;
+        width: 140px;
+
+        span.MuiButton-label {
+          span {
+            word-spacing: 5px;
+          }
+        }
+
+        span {
+          font-size: 1.125rem;
+        }
+      }
+
+      .region-wrapper,
+      .prefecture-wrapper {
+        & > .location-box {
+          font-size: 1.375rem;
+
+          .first-item {
+            font-size: 1.75rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .home-wrapper .recomment-section.MuiContainer-fixed {
+    max-width: 1140px;
+  }
+}

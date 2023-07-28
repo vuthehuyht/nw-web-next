@@ -1,0 +1,94 @@
+.summary-container {
+  border-radius: 4px;
+  box-shadow: 0 2px 8px 0 rgba(181, 181, 181, 0.15);
+  background-color: #fff;
+  padding: 40px;
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+  .nailist-detail-container {
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    .avatar-container {
+      position: relative;
+      .MuiAvatar-root {
+        width: 80px;
+        height: 80px;
+        margin-right: 16px;
+      }
+      .nailist-tag-container {
+        position: absolute;
+        top: 0;
+        left: -8px
+      }
+    }
+    > .MuiTypography-root {
+      word-break: break-all;
+    }
+  }
+  .booking-information-container {
+    margin-top: 24px;
+    padding: 16px 0px 16px;
+    background-color: rgba(#efefef, 0.4);
+    border-radius: 4px;
+    @media (max-width: 768px) {
+      padding: 8px 0px;
+    }
+    .booking-menus-detail {
+      margin: 0px 16px;
+      @media (max-width: 768px) {
+        margin: 0px 8px;
+      }
+      padding-bottom: 8px;
+      border-bottom: 1px solid #dddddd;
+      .booking-date-container {
+        font-weight: bold;
+        margin-bottom: 8px;
+        align-items: center;
+        .icon-calendar {
+          font-size: 24px;
+          margin-right: 4px;
+        }
+        > .MuiTypography-root {
+          font-weight: bold;
+        }
+      }
+      .MuiGrid-root {
+        .MuiGrid-item {
+          .menu-tag-container {
+            margin-right: 5px;
+          }
+          &:not(:first-child) {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+  .booking-price-container {
+    font-weight: bold;
+    padding: 8px 16px 0px;
+    text-align: right;
+    .spend-time {
+      margin-right: 56px;
+    }
+    .point-text {
+      color: #009193;
+    }
+    .app-point-text {
+      font-weight: 400;
+      width: 100%;
+    }
+    .payment-amount {
+      border-top: 1px solid #ddd;
+      margin-top: 8px;
+    }
+    @media (max-width: 768px) {
+      padding: 8px;
+      .spend-time {
+        margin-right: 4px;
+      }
+    }
+  }
+}

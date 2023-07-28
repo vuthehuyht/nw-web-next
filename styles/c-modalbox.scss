@@ -1,0 +1,48 @@
+.modal {
+  overflow: hidden;
+
+  .MuiDialogContent-root {
+    border-top: none;
+    padding: 0;
+  }
+
+  #dialog-close {
+    background: #fff;
+
+    button {
+      top: 0.75rem;
+      right: 0.75rem;
+      padding: 0.75rem;
+      z-index: 10;
+    }
+    .icon-close {
+      font-size: 2rem;
+    }
+  }
+
+  .MuiDialogTitle-root {
+    text-align: center;
+    position: relative;
+    background: url('/assets/images/2lines.svg') bottom repeat-x;
+
+    h2, h3 {
+      font-family: "Noto Sans JP", "Noto Serif JP", "Open Sans", sans-serif;
+      font-size: 1rem;
+      font-weight: 900;
+    }
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 0.75rem;
+    }
+
+    .icon-close {
+      color: #484848;
+    }
+  }
+
+  .content-modal {
+    padding: 1.5rem;
+  }
+}

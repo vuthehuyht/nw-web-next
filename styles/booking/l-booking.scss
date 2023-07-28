@@ -1,0 +1,103 @@
+.booking-page-container {
+  background-color: #f9f9f9;
+  padding-top: 1rem;
+  min-height: calc(100vh - 143px);
+
+  .MuiContainer-root {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .arrow-stepper {
+    display: flex;
+    justify-content: center;
+    // margin-top: 26px;
+  }
+  .schedule-container {
+    margin-bottom: 24px;
+    .text-noted {
+      font-size: 14px;
+      text-align: center;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  .timetable-container {
+    padding: 5px 0 2rem;
+  }
+
+  .calendar-container {
+    display: none;
+  }
+
+  .datetime-choose-container {
+    padding-top: 11px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    padding-left: 5px;
+    padding-right: 5px;
+    &.loading {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .booking-page-container {
+    min-height: calc(100vh - 60px);
+    .datetime-choose-container {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 32px;
+      padding-bottom: 30px;
+      min-height: calc(100vh - 170px);
+    }
+
+    .schedule-container {
+      width: 320px;
+      margin-bottom: 24px;
+      .text-noted {
+        text-align: left;
+      }
+    }
+    .timetable-container {
+      width: calc(100% - 380px);
+      margin-top: 16px;
+      padding-bottom: 30px;
+    }
+
+    .calendar-container {
+      margin-top: 24px;
+      display: block;
+      .full-booking-date {
+        position: relative;
+        padding: 2px 5px 4px;
+        .date-cell {
+          color: #aaaaaa;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+        }
+        
+        .icon-close {
+          position: absolute;
+          font-size: 32px;
+          top: -4px;
+          left: -4px;
+          color: #333;
+        }
+      }
+
+      & > div:last-child {
+        background-color: #fff;
+      }
+    }
+  }
+}

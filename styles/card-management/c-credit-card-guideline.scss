@@ -1,0 +1,102 @@
+.credit-card-guideline-modal {
+  .MuiDialog-container {
+    .MuiPaper-root {
+      background-color: #fff;
+      .MuiDialogContent-root {
+        .MuiTypography-root {
+          line-height: normal;
+        }
+        .content-modal {
+          padding: 32px 40px 24px 40px;
+          .subtitle-container {
+            padding: 8px 54px 8px 53px;
+            border-radius: 4px;
+            box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.08);
+            background-color: rgba(0, 0, 0, 0.08);
+            max-width: 411px;
+            margin: 0 auto;
+            .subtitle {
+              color: #009193;
+              font-weight: bold;
+              line-height: normal;
+            }
+          }
+          .guide-content {
+            margin-top: 40px;
+            .left-guide-content {
+              padding-right: 24px;
+              .image-guide-content {
+                padding: 24px 16px 32px;
+                border-radius: 8px;
+                border: dashed 1px #484848;
+                width: 100%;
+                > .MuiTypography-root {
+                  font-weight: bold;
+                }
+                .MuiGrid-container {
+                  margin-top: 32px;
+                  .MuiGrid-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    > .MuiTypography-root {
+                      margin-top: 8px;
+                      color: #009193;
+                    }
+                  }
+                }
+              }
+            }
+            .right-guide-content {
+              padding-left: 16px;
+              .guide-content-item {
+                &:last-child {
+                  margin-top: 24px;
+                }
+                .guide-text {
+                  flex: 1;
+                  margin-top: 8px;
+                  margin-left: 16px;
+                  .question-guide {
+                    font-weight: bold;
+                    margin-bottom: 8px;
+                  }
+                  .highlight-guide {
+                    color: #009193;
+                    margin-top: 8px;
+                  }
+                }
+              }
+            }
+          }
+          .btn-container {
+            button {
+              max-width: 320px;
+              width: 100%;
+              background-image: unset;
+              @media (max-width: 600px) {
+                max-width: unset;
+              }
+            }
+          }
+          @media (max-width: 600px) {
+            padding: 24px 16px 0px;
+            .subtitle-container {
+              max-width: unset;
+            }
+            .guide-content {
+              margin-top: 24px;
+              .left-guide-content {
+                padding-right: 0;
+              }
+              .right-guide-content {
+                padding-left: 0;
+                margin-top: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

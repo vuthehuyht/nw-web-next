@@ -1,0 +1,515 @@
+.post-thumbnail.MuiButton-root,
+.post-thumbnail {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  border: none;
+  display:block;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &__img,
+  .post-thumbnail__img {
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+  
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    span {
+      position:  absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+  }
+
+  &__details,
+  .post-thumbnail__details {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
+  }
+
+  &__tag,
+  .post-thumbnail__tag {
+    padding: 2px 4px;
+    font-size: 0.6875rem;
+    font-family: 'Noto Sans JP', 'Open Sans', sans-serif;
+    color: #fff;
+
+    &.type-price {
+      border-radius: 7px;
+      background: rgba(0,0,0,0.5);
+      float: right;
+    }
+  }
+
+  .type-multi-icon {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}
+
+.post-thumbnail.MuiButton-root .post-more-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+
+  .inner-post-more-btn {
+    color: #fff;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    border: solid 1px #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    width: calc(100% - 1rem);
+
+    i {
+      font-size: 1rem;
+    }
+  }
+}
+
+.detail-post-br.MuiContainer-root {
+  display: none;
+}
+
+.manicurist-detail-post {
+  // margin-top: -69px;
+  background: #fff;
+  overflow: hidden;
+  // min-height: calc(100vh + 170px);
+
+  img { width: 100%; }
+  .img-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+
+    &__inner {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &--heading {
+    background: #fff;
+    position: relative;
+    text-align: center;
+    padding: 0.875rem 1rem 0.625rem;
+
+    .control-btn {
+      position: absolute;
+      top: 0.875rem;
+      left: 1rem;
+      width: 80px;
+      display: flex;
+      align-items: center;
+    }
+
+    .heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        height: 40px;
+      }
+    }
+
+    .back-btn {
+      padding: 0;
+      .icon-angle-left {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__inner {
+    .detail-post-banner {
+      .blur-img { display: none; }
+    }
+
+    .detail-post-content {
+      padding: 0.5rem 1rem 5.5rem;
+
+      .count {
+        display: flex;
+        align-items: center;
+        padding-bottom: 0.625rem;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 0.5rem;
+
+        i { font-size: 1.5rem; }
+        &__inner {
+          margin-left: 0.25rem;
+          font-size: 0.875rem;
+        }
+      }
+
+      .info {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+
+        &__user { width: 70%; }
+        &__salon {
+          width: 30%;
+          text-align: right;
+        }
+      }
+
+      .salon {
+        padding-left: 1rem;
+        font-size: 0.625rem;
+        display: inline-block;
+
+        i { font-size: 0.75rem; }
+
+        &__inner {
+          white-space: pre-wrap;
+        }
+      }
+
+      .user {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &__avatar {
+          width: 56px;
+          border-radius: 50%;
+        }
+
+        &__content {
+          width: calc(100% - 64px);
+
+          h2, h3 {
+            margin: 0;
+            text-overflow: ellipsis;
+            overflow: hidden; 
+            white-space: nowrap;
+            width: 100%;
+            margin-bottom: 2px;
+          }
+
+          h2 {
+            font-size: 0.875rem;
+          }
+          h3 {
+            font-size: 0.75rem;
+            color: #858585;
+          }
+          .rating-info {
+            font-size: 0.625rem;
+            display: flex;
+            align-items: center;
+            .rating {
+              color: #ffb347;
+              font-weight: bold;
+            }
+            .MuiRating-sizeSmall {
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+
+      .caption {
+        font-size: 0.875rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .hash-tag {
+        color: #009193;
+        .tags {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          li {
+            display: inline-block;
+            margin-left: 0.25rem; 
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+
+      .create-date {
+        font-size: 0.875rem;
+        color: #858585;
+        margin-top: 1rem;
+      }
+    }
+    .detail-single-post-banner .blur-single-img {
+      display: none;
+    }
+    .detail-post-banner-list {
+      .react-multi-carousel-dot-list {
+        bottom: 5%;
+      }
+      .react-multi-carousel-dot button {
+        width: 6px;
+        height: 6px;
+        border-color: rgb(151,151,151);
+        background-color: rgb(151,151,151);
+      }
+      .react-multi-carousel-dot--active button {
+        border-color: rgb(0, 145, 147);
+        background-color: rgb(0, 145, 147);
+      }
+    }
+  }
+
+  .manicurist-price-box {
+    background: #e5004e;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+    button {
+      padding: 1.125rem 1rem;
+      display: block;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.875rem;
+      font-weight: bold;
+      background: #e5004e;
+    }
+
+    .title, .price {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      display: block;
+      text-align: left;
+    }
+
+    .left-book-wrapper {
+      max-width: 65%;
+    }
+
+    .right-book-wrapper {
+      padding: 0.25rem 1rem;
+      background: #fff;
+      border-radius: 18px;
+      color: #e5004e;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .post-thumbnail.MuiButton-root .post-more-btn .inner-post-more-btn {
+    font-size: 0.875rem;
+    width: 112px;
+
+    i { font-size: 1.25rem; }
+  }
+  .post-thumbnail.MuiButton-root,
+  .post-thumbnail {
+    position: relative;;
+    &__tag,
+    .post-thumbnail__tag {
+      font-size: 1.25rem;
+      font-weight: normal;
+      line-height: 21px;
+
+      &.type-price {
+        padding: 2px 0.5rem 6px;
+        border-radius: 14px;
+      }
+    }
+    .type-multi-icon {
+      top: 16px;
+      right: 16px;
+    }
+  }
+
+  .detail-post-br.MuiContainer-root {
+    margin: 0;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    min-width: 80px;
+    z-index: 2;
+
+    li > a,
+    li > p {
+      color: #fff;
+    }
+
+    .MuiBreadcrumbs-separator {
+      color: #aaa;
+    }
+  }
+
+  .manicurist-detail-post {
+    // margin-top: -56px;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    &--heading {
+      position: fixed;
+      z-index: 10;
+      background: transparent;
+      padding: 0;
+
+      .heading {
+        display: none;
+      }
+
+      .back-btn {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 0.25rem;
+      }
+
+      .control-btn {
+        top: 68px;
+      }
+    }
+
+    &__inner {
+      display: flex;
+      height: 100vh;
+
+      .detail-post-content {
+        width: 375px;
+        position: relative;
+      }
+
+      .detail-post-banner-list {
+        width: calc(100% - 375px);
+        position: relative;
+        display: flex;
+
+        .react-multi-carousel-track  {
+          height: 100% !important;
+        }
+        .react-multi-carousel-dot-list {
+          bottom: 2%;
+        }
+      }
+      .detail-post-banner {
+        // width: calc(100% - 375px);
+        // position: relative;
+        
+        .blur-img { 
+          display: block;
+          height: 100vh;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center center;
+          &:before {
+            content: '';
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backdrop-filter: blur(20px);
+          }
+          img {
+            height: 100vh;
+          }
+          
+        }
+
+        .thumbnail-banner {
+          width: 45%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .detail-single-post-banner {
+        width: calc(100% - 375px);
+        position: relative;
+        
+        .blur-single-img { 
+          display: block;
+          &:before {
+            content: '';
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backdrop-filter: blur(20px);
+          }
+        }
+
+        .thumbnail-single-banner {
+          width: 45%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    .manicurist-price-box {
+      position: absolute;
+      // width: 375px;
+    }
+  }
+}

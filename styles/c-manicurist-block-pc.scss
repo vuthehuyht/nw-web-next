@@ -1,0 +1,250 @@
+@media screen and (min-width: 769px) {
+  .banner-manicurist {
+    height: 560px;
+  }
+
+  .manicurist-block {
+    margin-bottom: 0;
+    .heading-manicurist-block {
+      padding-top: 4.125rem;
+      margin-bottom: 1.5rem;
+      h3 {
+        font-size: 1.5rem;
+      }
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
+  .manicurist-block--salon {
+    .heading-manicurist-block {
+      margin-bottom: 0.5rem;
+    }
+    .inner-manicurist-block {
+      padding-top: 0;
+    }
+  }
+
+  .book-sticky .book-wrapper button {
+    width: 340px;
+  }
+
+  .list-post .MuiGrid-spacing-xs-1 > .MuiGrid-item {
+    padding: 0.5rem;
+  }
+
+  .general-user {
+    height: 560px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .detail-user {
+    position: absolute;
+    top: 3.1875rem;
+    bottom: 3.1875rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 1.5rem;
+    width: 600px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    flex-direction: column;
+
+    .avatar {
+      position: static; 
+      transform: none;
+    }
+
+    .inner-detail-user {
+      margin-top: 1.5rem;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .book-wrapper {
+      width: 340px;
+    }
+
+    .user-introducion,
+    .rating-info {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .salon-block {
+    .salon-r {
+      &:first-child {
+        padding-top: 1.5rem;
+      }
+      .salon-inner {
+        width: 70%;
+        text-align: right;
+        span {
+          text-align: right;
+          &.name-type {
+            text-align: center;
+          }
+        }
+        &.salon-notes {
+          text-align: left;
+        }
+      }
+      &.remove-line {
+        border-bottom: none;
+      }
+    }
+    .salon-r--2-block .salon-inner {
+      width: 100%;
+    }
+    .salon-types .i-type {
+      margin-left: 1.438rem;
+      margin-right: 1.438rem;
+      width: calc(12.5% - 2.876rem);
+      text-align: center;
+    }
+    .MuiGrid-item:last-child {
+      padding-top: 16px;
+    }
+  }
+
+  .salon-photos {
+    max-height: 365px;
+
+    .slick-slide > div {
+      max-height: 365px;
+    }
+  }
+
+  .review-block {
+    .sum-point {
+      .average-point {
+        font-size: 1.25rem;
+      }
+
+      .MuiRating-sizeSmall {
+        font-size: 1.5rem;
+      }
+
+      .count-reviewer {
+        font-size: 1rem;
+      }
+    }
+
+    .details-point {
+      .r-point {
+        .name {
+          font-size: 0.875rem;
+        }
+
+        .MuiRating-sizeSmall {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .salon-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+
+    p.location-info,
+    p.salon-name {
+      margin: 0 0.5rem;
+    }
+
+    p.location-info {
+      display: flex;
+      align-items: center;
+      i {
+        font-size: 0.875rem;
+      }
+      .inner-info {
+        margin-left: 0.25rem;
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  .detail-user-dialog {
+    .MuiDialog-paperWidthSm {
+      max-width: 668px;
+    }
+    .detail-user {
+      padding: 2rem 1.5rem 3.5rem;
+      .user-introducion, .rating-info {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  // .empty-block {
+  //   height: 135px;
+  // }
+}
+
+@media screen and (min-width: 960px) {
+  .general-review {
+    padding: 1rem 1rem 1.5rem 1.5rem;
+    border-radius: 4px;
+    border: solid 1px #ddd;
+  }
+
+  .review-block {
+    .sum-point {
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 0;
+      padding-bottom: 1.25rem;
+    }
+    
+    .list-reviewer {
+      padding-left: 48px;
+    }
+
+    .details-point {
+      display: block;
+
+      .r-point {
+        margin: 1rem 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .name {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          i {
+            display: inline-block;
+            font-size: 1.5rem;
+            margin-right: 0.25rem;
+          }
+        }
+      }
+    }
+  }
+
+  .find-nailie-dialog {
+    .content-modal {
+      .qr {
+        display: inline-block;
+      }
+      .btn-download-app {
+        display: none;
+      }
+    }
+  }
+
+  .salon-block .salon-types .i-type {
+    width: calc(20% - 2.876rem);
+  }
+}

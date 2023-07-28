@@ -1,0 +1,68 @@
+.booking-confirmation-step {
+  margin-top: 32px;
+  max-width: 945px;
+  margin: 0 auto;
+  padding: 32px 0;
+  .card-list-block, .update-user-block, .point-coupon-block  {
+    display: block;
+    margin-top: 16px;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(181, 181, 181, 0.15);
+    background-color: #fff;
+    width: 100%;
+    @media (max-width: 768px) {
+      padding: 24px 16px;
+    }
+    .MuiTypography-root.card-number {
+      margin-left: 24px;
+      @media (max-width: 768px) {
+        margin-left: 8px;
+      }
+    }
+    .card-list-container {
+      margin-top: 24px;
+    }
+  }
+  .update-user-block {
+    .user-phone {
+      margin-top: 8px;
+    }
+  }
+
+  .cancel-policy-block {
+    margin-top: 16px;
+  }
+
+  .card-list-block {
+    .MuiDivider-root  {
+      margin-left: 40px;
+      margin-right: 40px;
+      @media (max-width: 768px) {
+        margin-left: 16px;
+        margin-right: 16px;  
+      }
+    }
+    & > button {
+      padding: 40px 40px 32px 40px;
+      &.coupon-section {
+        padding-top: 24px;
+      }
+      @media (max-width: 768px) {
+        padding: 24px 16px;
+      }
+    }
+  }
+  .point-coupon-block {
+    padding-bottom: 32px;
+    .block-title {
+      margin-bottom: 16px;
+    }
+    @media (max-width: 768px) {
+      padding-bottom: 16px;
+      .block-title {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

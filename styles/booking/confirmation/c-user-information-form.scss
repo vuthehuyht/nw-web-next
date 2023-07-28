@@ -1,0 +1,52 @@
+.update-user-block {
+  .input-box {
+    margin-top: 1.5rem;
+  }
+}
+
+.user-information-modal {
+  .btn-container {
+    margin-top: 1.5rem;
+    button {
+      width: 100%;
+    }
+  }
+
+  &.modal .content-modal {
+    padding: 0 1rem 1rem;
+    .input-box {
+      margin-top: 32px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .update-user-block {
+    .input-box {
+      margin-top: 2rem;
+    }
+  }
+
+  .user-information-modal {
+    .btn-container {
+      margin-top: 2rem;
+      button {
+        max-width: 320px;
+      }
+    }
+
+    &.modal .content-modal {
+      padding: 0 40px 24px 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .user-information-modal {
+    &.modal .content-modal {
+      form {
+        width: 834px;
+      }
+    }
+  }
+}

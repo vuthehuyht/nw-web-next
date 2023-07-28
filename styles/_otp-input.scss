@@ -1,0 +1,30 @@
+.otp-input-container {
+  max-width: 344px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  .otp-input.active-otp-input input {
+    border: solid 2px #e5004e;
+  }
+  .otp-input {
+    input {
+      border: solid 2px #efefef;
+      border-radius: 6px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      &:focus {
+        outline: none;
+      }
+      &:disabled {
+        opacity: 1;
+        background-color: #fff;
+      }
+      text-align: center;
+      width: 44px;
+      height: 44px;
+      font-size: 18px;
+      color: #e5004e;
+    }
+  }
+}

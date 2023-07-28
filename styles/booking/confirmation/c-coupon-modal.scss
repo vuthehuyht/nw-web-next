@@ -1,0 +1,138 @@
+.coupon-list-modal {
+  .btn-container {
+    margin-top: 1.5rem;
+    button {
+      width: 100%;
+    }
+  }
+  @media (max-width: 599px) {
+    .MuiPaper-root {
+      margin: 16px;
+    }
+  }
+  &.modal .content-modal {
+    padding: 0 40px 16px;
+    @media (max-width: 599px) {
+      padding: 0 16px 16px;
+    }
+    .input-box {
+      margin-top: 32px;
+      .input-container {
+        flex: 1;
+      }
+      .apply-button {
+        background-image: unset;
+        width: 120px;
+        margin-left: 16px;
+        @media (max-width: 599px) {
+          margin-top: 4px;
+          margin-left: 8px;
+        }
+      }
+      .MuiDivider-root {
+        margin-top: 32px;
+        @media (max-width: 599px) {
+          margin-top: 24px;
+        }
+      }
+      .coupon-list-title {
+        margin-top: 32px;
+        margin-bottom: 8px;
+        @media (max-width: 599px) {
+          margin-top: 24px;
+        }
+      }
+      .coupon-price-title {
+        margin-bottom: 32px;
+        @media (max-width: 599px) {
+          margin-bottom: 24px;
+        }
+      }
+      .grouped-coupon-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0px 32px;
+        @media (max-width: 599px) {
+          padding: 0px;
+        }
+      }
+      .coupon-container {
+        margin-bottom: 32px;
+        padding: 0px;
+        @media (max-width: 599px) {
+          margin-bottom: 16px;
+        }
+        img {
+          max-width: 329px;
+          border-radius: 3.7px;
+          @media (max-width: 599px) {
+            max-width: unset;
+            width: 100%;
+          }
+        }
+        .coupon-shadow {
+          height: 80px;
+          width: 8px;
+          right: -8px;
+          position: absolute;
+          z-index: 0;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+          background-color: #dfdfdf;
+        }
+        .coupon-info {
+          font-size: 10px;
+          font-weight: 500;
+          position: absolute;
+          bottom: 12px;
+          display: flex;
+          color: #fff;
+        }
+      }
+      .coupon-quantity-background {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        border-radius: 3.7px;
+        width: 46px;
+        height: 46px;
+        background: linear-gradient(
+          to top right,
+          transparent 50%,
+          #e5004e 50%
+        );
+        &.expired {
+          background: linear-gradient(
+            to top right,
+            transparent 50%,
+            #AAAAAA 50%
+          );
+        }
+      }
+      .coupon-quantity-text {
+        position: absolute;
+        top: 2px;
+        right: 3px;
+        color: #fff;
+        font-size: 14.8px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .coupon-list-modal {
+      &.modal .content-modal {
+        padding: 0 40px 24px 40px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 980px) {
+    &.modal .content-modal {
+      form {
+        width: 834px;
+      }
+    }
+  }
+}

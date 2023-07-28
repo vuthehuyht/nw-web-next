@@ -1,0 +1,8 @@
+node_modules
+dist
+.eslintrc.js
+.prettierrc.json
+ecosystem.config.js
+next-seo.config.js
+jsconfig.json
+next.config.js

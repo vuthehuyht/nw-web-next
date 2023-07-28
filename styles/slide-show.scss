@@ -1,0 +1,46 @@
+
+.slick-slider {
+  .slick-arrow {
+    width: 32px;
+    height: 32px;
+  }
+
+  .slick-next {
+    right: -36px;
+
+    &:before {
+      background: url('/assets/images/icon-next.svg') no-repeat;
+      color: transparent;
+      background-size: cover;
+    }
+  }
+
+  .slick-prev {
+    left: -36px;
+
+    &:before {
+      background: url('/assets/images/icon-back.svg') no-repeat;
+      color: transparent;
+      background-size: cover;
+    }
+  }
+
+  .slick-dots li {
+    
+    &.slick-active button:before {
+      color: $pink-red;
+    }
+
+    button:before {
+      color: #ddd;
+      font-size: 8px;
+    }
+  } 
+}
+
+
+@media screen and (max-width: 766px) {
+  .slick-slider {
+    margin: 0 auto;
+  }
+}

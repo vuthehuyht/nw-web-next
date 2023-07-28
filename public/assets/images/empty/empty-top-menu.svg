@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="75" viewBox="0 0 256 75">
+    <defs>
+        <filter id="u90lza6pea" width="111%" height="146.6%" x="-5.5%" y="-19.7%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.708163496 0 0 0 0 0.708163496 0 0 0 0 0.708163496 0 0 0 0.15 0"/>
+        </filter>
+        <rect id="zwvs8msqxb" width="236.8" height="55.851" x="0" y="0" rx="4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-592 -823) translate(592 823) translate(9.6 7.979)">
+                    <g>
+                        <use fill="#000" filter="url(#u90lza6pea)" xlink:href="#zwvs8msqxb"/>
+                        <rect width="235.84" height="54.891" x=".48" y=".48" fill="#FFF" stroke="#EEE" stroke-linejoin="square" stroke-width=".96" rx="4"/>
+                    </g>
+                    <rect width="30.4" height="30.319" x="12.8" y="11.968" fill="#D1D8DC" opacity=".602" rx="2"/>
+                    <rect width="53" height="5.984" x="51.2" y="11.968" fill="#D1D8DC" opacity=".602" rx="2"/>
+                    <rect width="44" height="5.984" x="51.2" y="23.936" fill="#D1D8DC" opacity=".602" rx="2"/>
+                    <rect width="114.4" height="5.984" x="51.2" y="35.904" fill="#D1D8DC" opacity=".602" rx="2"/>
+                </g>
+                <g transform="translate(-592 -823) translate(592 823) translate(207.2 19.947)">
+                    <path fill="#E5004E" d="M-2.018 10.336h37.954c.884 0 1.6.717 1.6 1.6v24c0 .884-.716 1.6-1.6 1.6H-2.018c-.587 0-1.127-.322-1.407-.838l-6.499-12c-.257-.475-.257-1.048 0-1.524l6.499-12c.28-.516.82-.838 1.407-.838z" transform="rotate(90 13.6 23.936)"/>
+                    <ellipse cx="13.6" cy="5.186" fill="#FFF" rx="2" ry="1.995"/>
+                    <path fill="#FFF" fill-rule="nonzero" d="M13.604 37.5c4.374 0 7.996-3.613 7.996-7.983 0-4.362-3.63-7.974-8.004-7.974S5.6 25.155 5.6 29.517c0 4.37 3.63 7.983 8.004 7.983zm-3.086-3.67c-.19-.14-.223-.37-.107-.692l.932-2.798-2.401-1.72c-.28-.197-.388-.411-.322-.634.074-.214.289-.32.635-.32l2.955.024.899-2.823c.099-.32.256-.485.495-.485.231 0 .396.164.495.485l.9 2.823 2.954-.025c.346 0 .553.107.627.321.074.223-.033.437-.314.634l-2.41 1.72.942 2.798c.107.321.074.552-.108.692-.19.14-.42.09-.701-.107l-2.385-1.745-2.393 1.745c-.28.197-.503.255-.693.107z"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

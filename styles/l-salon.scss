@@ -1,0 +1,415 @@
+.salon-landing-page {
+  font-family: "Noto Sans JP", "Noto Serif JP", "Open Sans", sans-serif;
+
+  .btn-link {
+    display: block;
+    width: 325px;
+    height: 70px;
+    background: #D54F67;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 70px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    margin: 60px auto 0;
+
+    &:visited {
+      color: #fff;
+    }
+
+    &:hover {
+      color: #fff;
+      background: #a53d50;
+    }
+
+    &::after {
+      content: "";
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 25px;
+      margin: auto;
+      border: 2px solid;
+      border-color: transparent transparent #fff #fff;
+      transform: rotate(-135deg);
+    }
+  }
+
+  .title_txt {
+    line-height: 42px;
+    font-size: 1.5rem;
+    letter-spacing: 3.7px;
+    position: relative;
+    color: #d54f67;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .header {
+    position: initial;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__inner {
+      overflow: hidden;
+
+      .header-image {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .title_image {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .salon-manage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+
+    .salon-manage__content {
+      &.bg-pink {
+        padding: 2.5rem 0.5rem;
+      }
+
+      &.text-block {
+        padding: 3.75rem 2rem;
+        text-align: center;
+      }
+
+      .title_txt {
+        margin: 1.25rem 0;
+        line-height: 1;
+        font-size: 1.625rem;
+        color: #d54f67;
+      }
+
+      .sub-title {
+        font-size: 1.125rem;
+        font-weight: bold;
+        margin-top: 40px;
+      }
+
+      .btn-link {
+        margin-top: 3.75rem;
+      }
+    }
+
+    .manage-image {
+      width: 100%;
+    }
+  }
+
+  .points {
+    padding: 0 0 3.75rem 0;
+    text-align: center;
+
+    .title_txt {
+      display: inline-block;
+      font-size: 1.375rem;
+      line-height: 1;
+      letter-spacing: normal;
+      margin: 0;
+
+      .small_txt {
+        font-size: 1.125rem;
+      }
+      .highlight {
+        font-size: 2.25rem;
+
+        &::after {
+          content: "--------";
+          position: absolute;
+          bottom: -15%;
+          left: -20%;
+          width: 100%;
+          font-size: 1rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .point__item {
+    margin-top: 2.5rem;
+    padding-bottom: 1.25rem;
+    .photo, .txt {
+      text-align: center;
+      letter-spacing: 0.04em;
+      margin: 25px auto 40px;
+      padding: 0 20px;
+    }
+    .photo { margin: 40px auto 0; }
+    & > p {
+      font-size: 0.75em;
+      line-height: 26px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      margin: 25px auto 40px;
+      padding: 0 20px;
+    }
+
+    .txt {
+      font-size: 1.375rem;
+      color: #d54f67;
+      font-weight: bold;
+      padding-top: 42px;
+      margin: 0 auto;
+      width: 335px;
+      height: 117px;
+      background: #fff url(/assets/images/salon/point1_ttl.png) no-repeat;
+      background-size: contain;
+
+      &.block02 {
+        background: #fff url(/assets/images/salon/point2_ttl.png) no-repeat;
+        background-size: contain;
+      }
+      &.block03 {
+        background: #fff url(/assets/images/salon/point3_ttl.png) no-repeat;
+        background-size: contain;
+      }
+    }
+
+    .photo img {
+      display: block;
+      margin: 0 1rem;
+      width: 90%;
+    }
+
+    .small-txt {
+      font-size: 0.6875rem;
+    }
+  }
+  .guide {
+    padding: 3.375rem 0;
+    background-color: #fcedf0;
+    text-align: center;
+    .title_txt {
+      line-height: 1;
+      margin-bottom: 2.5rem;
+    }
+    img {
+      width: 90%;
+    }
+  }
+  .contact-wrapper {
+    padding: 3.375rem 0;
+    .title_txt {
+      line-height: 1;
+      margin-bottom: 1.5rem;
+    }
+    .sub_txt {
+      color: #1a1a1a;
+      font-size: 0.75rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.salon-contact-form {
+  padding: 24px 12px;
+
+  .requied_txt {
+    font-size: 8px;
+    color: #fff;
+    background: #d54f67;
+    padding: 3px 7px;
+    border-radius: 2px;
+    line-height: 14px;
+    margin-right: 0.5rem;
+  }
+
+  .MuiGrid-root {
+    text-align: left;
+  }
+  .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .MuiTypography-body2 {
+    font-family: "Noto Sans JP", "Noto Serif JP", "Open Sans", sans-serif;
+    font-weight: 700;
+  }
+
+  .MuiSelect-icon {
+    color: #1a1a1a;
+  }
+
+  .MuiFormControl-root,
+  .MuiInputBase-root {
+    width: 100%;
+  }
+
+  .MuiOutlinedInput-input {
+    padding: 14px;
+  }
+
+  .MuiOutlinedInput-multiline {
+    padding: 0;
+  }
+
+  .btn-row {
+    text-align: center;
+
+    &.MuiGrid-item {
+      padding-top: 24px;
+    }
+  }
+
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #484848;
+    border-width: 1px;
+  }
+
+  .btn-submit {
+    width: 100%;
+    max-width: 310px;
+
+    &.MuiButton-containedSecondary {
+      background: linear-gradient(to right, #d54f67 0%, #ec87a0 100%);
+    }
+  }
+}
+
+.thank-you--salon {
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    margin: 1rem auto;
+    display: flex;
+  }
+}
+
+.non-break-line-md {
+  br {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .salon-landing-page {
+    
+    .guide {
+      img {
+        width: auto;
+      }
+    }
+    .point__item {
+      .photo img {
+        margin: 0 auto;
+        width: auto;
+        max-width: 275px;
+      }
+    }
+  }
+}
+
+.animated {
+  transition-timing-function: ease-out;
+}
+.fadeInUp {
+  animation-name: fadeInUp-20;
+}
+@keyframes fadeInUp-20 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0,20%,0);
+    transform: translate3d(0,20%,0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@media screen and (min-width: 751px) {
+  .salon-landing-page {
+    .title_txt {
+      font-size: 1.875rem;
+    }
+
+    .salon-manage {
+      padding: 64px 0 40px 0;
+      flex-direction: row;
+      align-items: center;
+
+      .salon-manage__content {
+        width: 342px;
+        margin: 0 2px;
+
+        &.bg-pink {
+          padding: 2.125rem 2.5rem;
+        }
+
+        &.text-block {
+          padding: 1.5rem 0;
+        }
+
+        .btn-link {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+
+    .point__list  {
+      max-width: 1140px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .point__item {
+      padding-left: 12px;
+      padding-right: 12px;
+
+      & > p {
+        font-size: 0.875rem;
+      }
+    }
+
+    .guide {
+      padding-top: 4.5rem;
+      padding-bottom: 4.5rem;
+      img {
+        width: 480px;
+      }
+    }
+
+    .contact-wrapper {
+      .sub_txt {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .salon-contact-form {
+    .MuiTypography-body2 {
+      display: block;
+      line-height: 47px;
+      margin-bottom: 0;
+    }
+  }
+
+  .non-break-line-md {
+    br {
+      display: none;
+    }
+  }
+}
+

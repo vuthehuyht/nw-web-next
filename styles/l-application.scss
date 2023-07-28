@@ -1,0 +1,106 @@
+.features-widget {
+  padding-top: 1.5rem;
+
+  .feature-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    margin: 0 0 32px;
+
+    &:nth-child(even) {
+      flex-direction: column-reverse;
+    }
+
+    &:last-child {
+      margin-bottom: 24px;
+    }
+
+    .icon {
+      margin-bottom: 24px;
+    }
+
+    .title {
+      font-family: 'Senlot';
+      font-size: 2rem;
+      font-weight: normal;
+      margin: 0;
+      text-transform: capitalize;
+    }
+
+    .jp-title {
+      font-size: 0.875rem;
+      font-weight: bold;
+      margin: 0 0 24px 0;
+    }
+
+    .content {
+      font-size: 0.875rem;
+    }
+  }
+
+  .text-container {
+    text-align: center;
+    padding: 0 1rem 1.5rem;
+    width: 100%;
+    line-height: normal;
+  }
+
+  .image-container {
+    text-align: center;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-widget {
+    .feature-row {
+      align-items: center;
+      flex-direction: row;
+      margin: 0 auto 24px;
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+
+    .image-container {
+      width: 50%;
+      margin: 0 1.5rem; 
+      
+      img {
+        width: 261px;
+      }
+    }
+
+    .text-container {
+      width: 50%;
+    }
+  }
+
+  .our-application-wrapper .banner-download-app {
+    margin-top: 23.5rem;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .features-widget {
+    .feature-row {
+      width: 736px;
+    }
+    .text-container {
+      width: calc(100% - 369px);
+    }
+    .image-container {
+      width: auto;
+      margin: 0 54px;
+    }
+  }
+
+  .our-application-wrapper .banner-download-app {
+    margin: 5.55rem 0 4.25rem;
+  }
+}

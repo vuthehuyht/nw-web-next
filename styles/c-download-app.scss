@@ -1,0 +1,58 @@
+.header-download-app {
+  background-color: #f4f4f4;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  .container-download-app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content-download-app {
+    display: flex;
+    align-items: center;
+    
+    img {
+      border: 1px solid #d8d8d8;
+      background-color: #fff;
+      border-radius: 8px;
+      margin-right: 1rem;
+    }
+  }
+
+  .title-download-app {
+    text-align: left;
+
+    h3, p {
+      margin: 0;
+      font-size: 0.875rem;
+      font-weight: normal;
+      line-height: 1.43;
+    }
+
+    h3 {
+      color: #484848;
+    }
+
+    p {
+      color: rgba(72, 72, 72, 0.65);
+    }
+  }
+
+  .btn-download-app a {
+    color: #007aff;
+    white-space: nowrap;
+    margin-left: 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .header-download-app {
+    display: none;
+  }
+}

@@ -1,0 +1,30 @@
+.payment-method-modal {
+  .MuiDialog-container {
+    .MuiPaper-root {
+      .MuiDialogContent-root {
+        .content-modal {
+          padding: 0;
+          .card-list-container {
+            .MuiFormGroup-root {
+              flex: 1 1 auto;
+              max-height: calc(100vh - 400px);
+              overflow-y: auto;
+              flex-wrap: nowrap;
+            }
+          }
+          .btn-container {
+            padding: 0px 16px;
+            button {
+              max-width: 320px;
+              width: 100%;
+              background-image: unset;
+              @media (max-width: 600px) {
+                max-width: unset;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

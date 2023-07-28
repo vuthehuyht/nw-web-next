@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+    <defs>
+        <linearGradient id="b5nbyepgda" x1="100%" x2="0%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#E75483"/>
+            <stop offset="100%" stop-color="#FBDC9F"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-40 -2041) translate(40 2041)">
+                <circle cx="30" cy="30" r="29" fill="#FFF" stroke="url(#b5nbyepgda)" stroke-width="2"/>
+                <text fill="#000" font-family="SFProText-Regular, SF Pro Text" font-size="11">
+                    <tspan x="16.239" y="20">STEP</tspan>
+                </text>
+                <text fill="#000" font-family="SFProText-Regular, SF Pro Text" font-size="28">
+                    <tspan x="21.223" y="47">3</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

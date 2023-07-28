@@ -1,0 +1,535 @@
+.reservation-link {
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+  &:hover {
+    // .reservation-card.MuiCard-root {
+    //   background: rgba(255,255,255,0.75);
+    // }
+
+    .MuiButton-outlinedSecondary {
+      border: 1px solid #e50250;
+      background-color: rgba(229, 2, 80, 0.04);
+    }
+    .MuiButton-containedSecondary {
+      box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+      background: #a00036;
+    }
+  }
+}
+
+.reservation-card.MuiCard-root {
+  background-color: #fff;
+  box-shadow: none;
+  margin: 1rem -16px;
+  border: solid 1px #eee;
+  border-radius: 4px;
+  box-shadow:  0 2px 8px 0 rgba(181, 181, 181, 0.15);
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info {
+    display: flex;
+    max-width: 72%;
+
+    .location {
+      display: none;
+    }
+  }
+
+  .status-wrapper {
+    width: 25%;
+    text-align: right;
+  }
+
+  .status {
+    font-size: 0.875rem;
+    width: auto;
+    padding: 0 0.5rem;
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+    white-space: pre-line;
+    &.primary-pink {
+      background-color: #e5004e;
+      border: 1px solid #e5004e;
+      color: #fff;
+    }
+    &.second-pink {
+      background-color: #fff;
+      border: 1px solid #e5004e;
+      color: #e5004e;
+    }
+    &.primary-grey {
+      background-color: #919191;
+      border: 1px solid #919191;
+      color: #fff;
+    }
+    &.second-grey {
+      background-color: #fff;
+      border: 1px solid #919191;
+      color: #919191;
+    }
+  }
+
+  .menus-wrapper {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: #efefef;
+    font-size: 0.875rem;
+
+    .item-menu {
+      margin-bottom: 0.25rem;
+      span {
+        display: inline-block;
+        line-height: 1.57;
+        padding: 0 0.5rem;
+        height: 24px;
+      }
+      .category {
+        border-radius: 4px;
+        background-color: #919191;
+        color: #fff;
+      }
+      .type {
+        border-radius: 4px;
+        margin-left: 0.5rem;
+
+      }
+    }
+  }
+
+  .reservation-actions {
+    padding: 0 1rem 1rem;
+    justify-content: center;
+
+    .button {
+      width: 100%;
+      height: 48px;
+
+      &.contained-secondary {
+        box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+        color: #fff;
+        background-color: #e50250;
+      }
+
+      &.outlined-secondary {
+        padding: 5px 15px;
+        color: #e50250;
+        border: 1px solid rgba(229, 2, 80, 0.5);
+      }
+    }
+  }
+
+  .pin-location {
+    margin-top: 12px;
+    margin-right: 10px;
+    i {
+      font-size: 28px;
+      &.icon-outline-location {
+        margin-right: 16px; 
+      }
+    }
+    a {
+      display: inline-block;
+    }
+  }
+
+  .MuiCardActionArea-root:hover {
+    .button.contained-secondary {
+      box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+      background-color: #a00036;
+    }
+    .button.outlined-secondary {
+      border: 1px solid #e50250;
+      background-color: rgba(229, 2, 80, 0.04);
+    }
+  }
+}
+
+.nailist-information {
+  display: flex;
+  width: 100%;
+
+  .nailist-avatar {
+    width: 56px;
+    height: 56px;
+  }
+
+  .booking-time {
+    margin-left: 1rem;
+    width: calc(100% - 56px);
+    overflow: hidden;
+
+    h3 {
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.57;
+      margin: 0;
+
+      &.salon-name {
+        font-weight: normal;
+        color: #858585;
+      }
+
+      &.date-time-booking {
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+      }
+    }
+    
+  }
+
+  .location {
+    font-size: 0.75rem;
+    font-weight: normal;
+    i {
+      font-size: 0.875rem;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+    }
+  }
+}
+
+.booking-date-container {
+  p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 0.25rem;
+  }
+
+  i {
+    font-size: 1.5rem;
+  }
+}
+
+.menu-detail-container {
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+
+  .MuiGrid-root {
+    .MuiGrid-item {
+      .menu-tag-container {
+        margin-right: 5px;
+      }
+      &:not(:first-child) {
+        text-align: right;
+      }
+    }
+  }
+}
+
+.total-container {
+  font-weight: bold;
+  padding: 8px;
+  text-align: right;
+
+  .spend-time {
+    margin-right: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .point-text {
+    color: #009193;
+  }
+  .app-point-text {
+    font-weight: 400;
+    width: 100%;
+  }
+}
+
+.booking-information {
+  .payment-amount, .use-point, .use-coupon {
+    .title, .values {
+      color: #009193;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }
+
+  .payment-amount {
+    border-top: 1px solid #ddd;
+    margin-top: 8px;
+
+    &.has-fee {
+      .title, .values {
+        color: #f44336;
+      }
+    }
+  }
+
+  .cancel-detail-container {
+    margin-top: 8px;
+    .cancel-fee {
+      padding-bottom: 8px;
+    }
+    .cancel-payment-amount {
+      border-top: 1px solid #dddddd;
+      margin-top: 8px;
+      padding-top: 16px;
+    }
+  }
+}
+
+.payment-card-information {
+  .payment-card-row {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+  span.MuiTypography-body1,
+  p.MuiTypography-body1.type-card {
+    color: #898989;
+    font-size: 0.875rem;
+  }
+  p.MuiTypography-body1,
+  .card-number, .card-expire-date,
+  .reservation-number, .request-date, .cancel-date {
+    font-size: 1rem;
+    color: #484848;
+  }
+  .card-number-date-container {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    justify-content: flex-end;
+
+    .card-expire-date {
+      margin-left: 0.5rem;
+    }
+  }
+  .type-card {
+    span { display: none; }
+  }
+  .reservation-number {
+    text-transform: uppercase;
+  }
+  .card-info {
+    & > div:first-child { display: none !important; }
+  }
+  .payment-type, .card-info,
+  .reservation-number, .request-date, .cancel-date {
+    text-align: right;
+    justify-content: end;
+  }
+}
+
+.payment-method-information {
+  scroll-margin: 70px;
+  .payment-method-container.bank-transfer-container {
+    > .title {
+      box-shadow: unset;
+      margin-bottom: 24px;
+    }
+  }
+  .error-card-container {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #dddddd;
+  }
+  .cancel-booking-container {
+    .error-text {
+      cursor: pointer;
+      text-decoration: underline;
+      -moz-text-decoration-color: #f44336;
+      text-decoration-color: #f44336;
+      -moz-text-decoration-style: solid;
+      text-decoration-style: solid;
+      text-decoration-thickness: 2px;
+      color: #f44336;
+    }
+  }
+  .payment-action-container {
+    max-width: 404px;
+    width: 100%;
+    margin-top: 12px;
+    margin: 12px auto 0;
+    > button {
+      &:hover {
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+.error-card-container {
+  .error-card-box {
+    border: solid 1px #dddddd;
+    max-width: 670px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 16px;
+    .card-number-date-container {
+      margin-left: 32px;
+      display: flex;
+      .card-number {
+        margin-right: 16px;
+        font-weight: bold;
+      }
+      .card-expire-date {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.review-information {
+  .avarage-rating {
+    display: flex;
+    align-items: center;
+
+    h3 {
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0;
+      line-height: 1;
+      margin-right: 0.5rem;
+    }
+
+    i, span {
+      color: #ffbd00;
+    }
+
+    i {
+      font-size: 2rem;
+    }
+
+    span {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+  .point-rating {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+
+    & > div:first-child {
+      .point-title {
+        margin-left: 0;
+      }
+    }
+
+    .point-title {
+      color: #898989;
+      font-size: 0.875rem;
+      margin-right: 0.5rem;
+      margin-left: 40px;
+    }
+
+    span {
+      font-size: 0.75rem;
+      font-weight: bold;
+    }
+
+    .point {
+      font-size: 1rem;
+    }
+  }
+  .user-avatar {
+    width: 48px;
+    height: 48px;
+  }
+  .comment-info {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.57;
+    white-space: pre-wrap;
+  }
+  .user-name {
+    margin: 0 0.5rem;
+    font-weight: bold;
+    font-size: 0.875rem;
+  }
+  .create-date {
+    font-size: 0.875rem;
+    color: #858585;
+  }
+  .nailist-info {
+    border-top: 1px solid #ddd;
+    padding-left: 56px;
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width : 415px ) {
+  .reservation-card.MuiCard-root {
+    .reservation-actions .button {
+      max-width: 320px;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .reservation-card.MuiCard-root {
+    margin: 1rem 0;
+
+    .pin-location {
+      i {
+        font-size: 28px;
+      }
+    }
+  }
+
+  .nailist-information {
+    .nailist-avatar {
+      width: 64px;
+      height: 64px;
+    }
+  }
+
+  .total-container {
+    padding: 8px 0 16px;
+    .spend-time {
+      margin-right: 8px;
+    }
+  }
+
+  .payment-card-information {
+    .payment-card-row {
+      padding: 1.5rem 0;
+    }
+
+    .card-number-date-container {
+      margin-left: 1rem;
+      justify-content: flex-start;
+      .card-expire-date {
+        margin-left: 1rem;
+      }
+    }
+
+    .type-card {
+      span { display: block; }
+      & > div { display: none !important; }
+    }
+
+    .card-info {
+      & > div:first-child { display: block !important; }
+    }
+
+    .payment-type, .card-info,
+    .reservation-number, .request-date, .cancel-date {
+      text-align: left;
+      justify-content: start;
+    }
+  }
+}

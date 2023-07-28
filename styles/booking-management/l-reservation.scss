@@ -1,0 +1,32 @@
+.reservation-wrapper {
+  padding: 1rem 0;
+
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+
+  .passed-reservations {
+    margin-top: 2rem;
+  }
+
+  .action-reservations {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+
+    &.has-error {
+      padding-bottom: 6rem;
+    }
+  }
+
+  .btn-load-more {
+    border-radius: 20px;
+
+    &.MuiButtonBase-root.MuiButton-root.Mui-disabled.Mui-disabled {
+      color: rgba(0, 145, 147, 0.26);
+      border: 1px solid rgba(0, 145, 147, 0.12);
+    }
+  }
+}

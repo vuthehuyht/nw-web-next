@@ -1,0 +1,65 @@
+.floating-message-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  .change-card-countdown {
+    padding: 6px 16px;
+    border-radius: 4px;
+    background-color: #eb6775;
+    margin-bottom: 8px;
+    margin-left: auto;
+    color: #fff;
+    opacity: 0.9;
+    max-width: 238px;
+    display: block;
+    .count-down-timer {
+      margin-left: 23px;
+    }
+  }
+}
+
+.floating-message {
+  border-radius: 4px;
+  opacity: 0.9;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  min-height: 50px;
+
+  &__heading {
+    background-color: #eb6775;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+
+  &__inner {
+    background-color: #303030;
+    font-size: 0.75rem;
+    padding: 0.75rem;
+    position: relative;
+
+    .sub-title {
+      margin: 0;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .count-payment-error {
+      position: absolute;
+      padding: 0 8px 3px;
+      border-radius: 10px;
+      background-color: #fff;
+      font-size: 0.75rem;
+      color: #484848;
+      right: 0.5rem;
+      top: 0.5rem;
+    }
+  }
+}

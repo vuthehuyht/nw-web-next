@@ -1,0 +1,85 @@
+.cancel-policy-modal {
+  .MuiDialog-container {
+    .MuiPaper-root {
+      .MuiDialogContent-root {
+        .content-modal {
+          padding: 32px 35px 24px;
+          @media (max-width: 600px) {
+            padding: 24px 16px 0px;
+          }
+          .warning-text {
+            color: #f44336;
+          }
+          .note-text {
+            max-width: 364px;
+            margin: 0 auto;
+            font-weight: 500;
+          }
+          .nailist-avatar {
+            margin-top: 32px;
+            .MuiAvatar-root {
+              width: 80px;
+              height: 80px;
+            }
+          }
+          .nailist-name {
+            font-weight: bold;
+            margin-top: 16px;
+          }
+          .policy-content {
+            margin-top: 32px;
+            .policy-item {
+              padding: 27px 0px 25px;
+              box-shadow: inset 0 -1px 0 0 #dddddd;
+              > .MuiTypography-root {
+                &:nth-child(2) {
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+          .policy-example {
+            .example-booking-date {
+              text-align: center;
+              padding: 8px 16px;
+              background-color: #484848;
+              color: #fff;
+              margin-bottom: 24px;
+              margin-top: 32px;
+            }
+            .medium-opacity {
+              opacity: 0.5;
+            }
+            .light-opacity {
+              opacity: 0.75;
+            }
+            .example-item {
+              .example-date {
+                background-color: #484848;
+                color: #ffffff;
+                padding: 8px 24px;
+                height: 36px;
+              }
+              .example-incoming-days {
+                margin-top: 8px;
+                .icon-fill-arrow-down {
+                  font-size: 24px;
+                  margin-top: 8px;
+                }
+              }
+              .example-cancel-fee {
+                height: 36px;
+                width: 100%;
+                max-width: 166px;
+                border: solid 1px #484848;
+                background-color: #fff;
+                padding: 8px;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.contact-support-modal {
+  .MuiDialog-container {
+    .MuiPaper-root {
+      .MuiDialogContent-root {
+        .content-modal {
+          padding: 32px 40px 24px 40px;
+          @media (max-width: 600px) {
+            padding: 24px 16px 0px;
+          }
+          .helper-text {
+            &.title {
+              font-weight: bold;
+              white-space: pre-line;
+            }
+            font-size: 14px;
+            color: #484848;
+            font-family: "Noto Sans JP", "Noto Serif JP", "Open Sans", sans-serif;
+            white-space: pre-line;
+            text-align: center;
+          }
+          > form {
+            margin-top: 32px;
+            margin-bottom: 8px;
+            .text-field-container {
+              margin-bottom: 24px;
+            }
+          }
+          .btn-container {
+            button {
+              max-width: 320px;
+              width: 100%;
+              background-image: unset;
+              @media (max-width: 600px) {
+                max-width: unset;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

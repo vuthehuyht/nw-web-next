@@ -1,0 +1,49 @@
+.add-card-guideline-modal {
+  .MuiDialog-container {
+    .MuiPaper-root {
+      .MuiDialogContent-root {
+        .content-modal {
+          padding: 32px 40px 24px 40px;
+          @media (max-width: 600px) {
+            padding: 24px 16px 0px;
+          }
+          .question-guide {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: normal;
+            color: #484848;
+          }
+          > .question-guide {
+            margin-top: 16px;
+          }
+          .guide-content {
+            .guide-content-item {
+              margin-top: 32px;
+              display: flex;
+              .guide-text {
+                flex: 1;
+                margin-left: 24px;
+                .answer-guide {
+                  margin-top: 8px;
+                  .highlight-guide {
+                    color: #e54152;
+                  }
+                }
+              }
+            }
+          }
+          .btn-container {
+            button {
+              max-width: 320px;
+              width: 100%;
+              background-image: unset;
+              @media (max-width: 600px) {
+                max-width: unset;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

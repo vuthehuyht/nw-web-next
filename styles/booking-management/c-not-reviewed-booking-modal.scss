@@ -1,0 +1,108 @@
+.not-reviewed-booking-modal {
+  .MuiDialogTitle-root {
+    .MuiButtonBase-root {
+      display: none;
+    }
+  }
+  .MuiDialog-container {
+    .MuiPaper-root {
+      .MuiDialogContent-root {
+        .content-modal {
+          padding: 24px 35px 24px;
+          @media (max-width: 600px) {
+            padding: 24px 16px;
+          }
+          .treatment-title {
+            padding: 8px 16px;
+            background-color: #000;
+            border-radius: 4px;
+            color: #fff;
+            margin-top: 24px;
+          }
+          .booking-info-container {
+            padding: 24px 0;
+            border-bottom: 1px solid #dddddd;
+            .nailist-information {
+              .MuiAvatar-root {
+                width: 80px;
+                height: 80px;
+                @media (max-width: 600px) {
+                  width: 56px;
+                  height: 56px;
+                }
+              }
+              .booking-time {
+                .nailist-name {
+                  font-size: 24px;
+                }
+              }
+            }
+            .booking-info {
+              margin-top: 1.5rem;
+            }
+            .memo-change-price {
+              margin-top: 16px;
+              white-space: pre-line;
+            }
+            .dark-box {
+              padding: 16px;
+              border-radius: 4px;
+              background-color: rgba(#efefef, 0.4);
+              @media (max-width: 600px) {
+                padding: 8px;
+              }
+            }
+          }
+          .review-form {
+            .rating-section {
+              padding: 24px 0px;
+              border-bottom: 1px solid #dddddd;
+            }
+            .star-rating-container {
+              &:not(:first-child) {
+                margin-top: 12px;
+              }
+              .input-item {
+                padding-left: 6%;
+                @media (max-width: 600px) {
+                  padding-left: 12px;
+                }
+              }
+            }
+            .text-field-container {
+              margin-top: 12px;
+              .input-item {
+                padding-left: 6%;
+                @media (max-width: 600px) {
+                  padding-left: 12px;
+                }
+              }
+            }
+          }
+          .star-rating-container {
+            .label-container {
+              @media (max-width: 600px) {
+                padding: 12px 0px 12px 12px;
+              }
+            }
+          }
+          .btn-container {
+            margin-top: 40px;
+            button {
+              max-width: 320px;
+              width: 100%;
+              background-image: unset;
+              @media (max-width: 600px) {
+                max-width: unset;
+              }
+            }
+          }
+          .link-text {
+            font-weight: bold;
+            margin-top: 24px;
+          }
+        }
+      }
+    }
+  }
+}

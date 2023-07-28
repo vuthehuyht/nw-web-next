@@ -1,0 +1,68 @@
+.authenticate-dialog {
+  .MuiPaper-rounded {
+    border-radius: 32px;
+    overflow: hidden;
+    max-width: 444px;
+    width: 100%;
+  }
+  .MuiDialogTitle-root {
+    background: transparent;
+    padding: 0;
+    .MuiButtonBase-root {
+      right: 4px;
+    }
+    .icon-close {
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+      background-color: rgba(249, 249, 249, 0.78);
+      border-radius: 50%;
+      font-size: 15px;
+      padding: 5px;
+    }
+  }
+  .MuiDialogContent-root {
+    overflow-y: unset;
+    position: relative;
+  }
+  .MuiDialogTitle-root h2, .MuiDialogTitle-root h3 {
+    img {
+      width: 100%;
+    }
+  }
+
+  .content-modal {
+    text-align: center;
+    padding: 16px;
+    border-radius: 32px;
+    .authenticate-section {
+      img {
+        position: absolute;
+        top: -21px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        max-width: 294px;
+      }
+      button {
+        margin-top: 82px;
+        max-width: 320px;
+        width: 100%;
+        box-shadow: unset;
+      }
+      .MuiTypography-root {
+        font-weight: bold;
+        margin-top: 16px;
+        font-family: "Noto Sans JP", "Noto Serif JP", "Open Sans", sans-serif;
+        &.login-text {
+          margin-top: 24px;
+        }
+        a {
+          text-decoration: underline;
+          -moz-text-decoration-style: solid;
+          text-decoration-style: solid;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 1px;
+        }
+      }
+    }
+  }
+}

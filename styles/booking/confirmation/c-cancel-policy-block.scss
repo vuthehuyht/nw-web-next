@@ -1,0 +1,24 @@
+.cancel-policy-block {
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px 0 rgba(181, 181, 181, 0.15);
+  background-color: #fff;
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+  .cancel-date-container {
+    margin-bottom: 9px;
+  }
+  > .MuiTypography-root {
+    .highlight-text {
+      color: #009193;
+      cursor: pointer;
+    }
+  }
+  .btn-container {
+    button {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+}

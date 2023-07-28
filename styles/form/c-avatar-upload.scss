@@ -1,0 +1,68 @@
+.upload-avatar-container {
+  > input {
+    display: none;
+  }
+  label {
+    cursor: pointer;
+    .MuiBadge-root {
+      > .MuiAvatar-root {
+        width: 70px;
+        height: 70px;
+        background-color: #efefef;
+        .icon-default-user {
+          color: #000000;
+          font-size: 70px;
+        }
+      }
+      .MuiBadge-badge {
+        right: 19%;
+        bottom: 19%;
+        .icon-plus {
+          color: #E5004E;
+          font-size: 28px;
+          background-color: #fff;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.crop-image-modal {
+  .MuiDialog-container {
+    .MuiPaper-root {
+      @media (max-width: 320px) {
+        margin: 0;
+      }
+    }
+    .MuiDialogContent-root {
+      .content-modal {
+        padding-top: 32px;
+        .zoom-container {
+          .MuiTypography-root {
+            margin-right: 16px;
+          }
+          .MuiSlider-root {
+            max-width: 360px;
+            flex: 1;
+          }
+        }
+        .btn-container {
+          button {
+            width: 100%;
+            max-width: 320px;
+            border-radius: 4px;
+          }
+          .cancel-btn {
+            margin-right: 16px;
+            border: solid 1px #484848;
+          }
+          .confirm-btn {
+            width: 100%;
+            background-image: unset;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="92" height="92" viewBox="0 0 92 92">
+    <defs>
+        <path id="nsnjb2ps9a" d="M0 0L50 0 50 37.665 0 37.665z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-24 -3143) translate(24 3143)">
+                <g transform="translate(21 27)">
+                    <mask id="2mzz990gyb" fill="#fff">
+                        <use xlink:href="#nsnjb2ps9a"/>
+                    </mask>
+                    <path fill="#D54F67" d="M7.434 23.407h35.132V3.519H7.434v19.888zM6.05 27.542H43.95c1.447 0 2.62-1.173 2.62-2.62V2.618c0-1.445-1.173-2.618-2.62-2.618H6.05C4.602 0 3.43 1.173 3.43 2.618v22.304c0 1.447 1.172 2.62 2.619 2.62zM19.643 35.3l1.352-1.828h8.567l1.35 1.828h-11.27zm29.97-.49l-4.673-4.147c-.3-.266-.732-.417-1.189-.417H6.248c-.456 0-.888.151-1.188.417L.388 34.81c-.25.221-.388.507-.388.801v1.445c0 .337.352.609.787.609h48.426c.436 0 .787-.272.787-.609v-1.445c0-.294-.137-.58-.388-.801z" mask="url(#2mzz990gyb)"/>
+                </g>
+                <circle cx="46" cy="46" r="45" stroke="#D54F67" stroke-width="2"/>
+            </g>
+        </g>
+    </g>
+</svg>

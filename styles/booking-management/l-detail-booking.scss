@@ -1,0 +1,128 @@
+.reservation-details-wrapper {
+  .reservation-details-container {
+    padding: 1rem 0;
+  }
+  .info-box {
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(181, 181, 181, 0.15);
+    background-color: #fff;
+    padding: 1rem;
+    margin-top: 24px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .dark-box {
+    border-radius: 4px;
+    background-color: rgba(239, 239, 239, 0.4);
+    padding: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+
+.info-box {
+  .booking-error-container {
+    margin-bottom: 24px;
+    .icon-container {
+      margin-bottom: 8px;
+      i {
+        font-size: 90px;
+        color: #ff3b30;
+      }
+    }
+    .bold-error-text {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .error-text {
+      margin-top: 8px;
+    }
+  }
+  > .error-text {
+    white-space: pre-line;
+  }
+  h3 {
+    margin: 0 0 1.5rem;
+    font-size: 1rem;
+  }
+
+  .nailist-info {
+    .nailist-name {
+      font-size: 1.5rem;
+      font-weight: 500;
+      word-break: break-word;
+    }
+  }
+
+  .button-actions {
+    &.cancel {
+      padding: 1.5rem 0;
+      border-top: 1px solid #ddd;
+      .cancel-confirm-button {
+        color: #fff;
+        background-color: #303030;
+        max-width: 200px;
+        width: 100%;
+      }
+      .cancel-button {
+        color: #f44336;
+      }
+    }
+    &.review {
+      padding-top: 1.5rem;
+      p {
+        font-size: 0.875rem;
+      }
+      .review-button {
+        width: 100%;
+        height: 48px;
+      }
+    }
+  }
+}
+
+.memo-change-price {
+  .memo-heading {
+    display: flex;
+    align-content: center;
+    margin-bottom: 0.5rem;
+    
+    i {
+      font-size: 1.5rem;
+      margin-right: 0.25rem;
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .reservation-details-wrapper {
+    .reservation-details-container {
+      padding: 24px 24px 84px;
+    }
+    .dark-box {
+      padding: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .info-box {
+      padding: 40px;
+    }
+  }
+
+  .button-actions {
+    &.review {
+      p {
+        font-size: 1rem;
+      }
+      .review-button {
+        max-width: 320px;
+      }
+    }
+  }
+}

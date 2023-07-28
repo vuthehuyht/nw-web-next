@@ -1,0 +1,66 @@
+{
+  "parser": "@babel/eslint-parser",
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base",
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@next/next/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["."],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
+      "alias": {
+        "map": [
+          ["@utils", "./utils"],
+          ["@providers", "./providers"],
+          ["@components", "./components"],
+          ["@containers", "./containers"]
+        ]
+      }
+    }
+  },
+  "plugins": ["import", "prettier"],
+  "rules": {
+    "linebreak-style": 0,
+    "no-irregular-whitespace": 0,
+    "no-unused-vars": "warn",
+    "react/prop-types": 0,
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal"]
+      }
+    ],
+    "prettier/prettier": ["error", { "singleQuote": false, "trailingComma": "es5" }],
+    "import/prefer-default-export": 0,
+    "no-console": 0,
+    "react/jsx-uses-react": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/display-name": 0,
+    "@next/next/no-img-element": "off",
+    "@next/next/next-script-for-ga": 0,
+    "react-hooks/rules-of-hooks": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-boolean-value": "warn"
+  }
+}

@@ -1,0 +1,37 @@
+.star-rating-container {
+  .label-container {
+    display: flex;
+    padding: 24px 0px 0px 12px;
+    .MuiTypography-root {
+      font-weight: bold;
+      margin-bottom: 0;
+      font-family: "Noto Sans JP", "Noto Serif JP", "Open Sans", sans-serif;
+      .required {
+        margin-left: 0.5rem;
+        color: #e5004e;
+        font-weight: normal;
+      }
+    }
+  }
+  .MuiRating-root {
+    width: 100%;
+    overflow: hidden;
+    > label {
+      padding: 0px calc(12.5% - 17.5px);
+      &:first-child {
+        margin-left: calc((12.5% - 17.5px) * -1);
+      }
+      &:last-of-type {
+        margin-right: calc((12.5% - 17.5px) * -1);
+      }
+    }
+
+    .icon-outline-star, .icon-big-star {
+      font-size: 28px;
+      color: #ffbd00;
+    }
+    > input {
+      display: none;
+    }
+  }
+}

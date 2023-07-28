@@ -1,0 +1,60 @@
+.add-card-modal {
+  .MuiDialog-container {
+    .MuiPaper-root {
+      .MuiDialogContent-root {
+        .content-modal {
+          padding: 32px 40px 24px 40px;
+          .card-type-container {
+            > .card-image {
+              &:not(:last-child) {
+                margin-right: 6px;
+              }
+            }
+          }
+          .select-field-container {
+            .slash-container {
+              margin: 14px 9px 0px 9px;
+              @media (max-width: 600px) {
+                margin: 14px 4px 0px 4px;
+              }
+            }
+            .start-adornment {
+              font-size: 14px;
+              color: #484848;
+              line-height: 20px;
+            }
+          }
+          .text-container {
+            .MuiTypography-alignCenter {
+              @media (max-width: 600px) {
+                text-align: left;
+              }
+            }
+            .MuiTypography-colorPrimary {
+              margin-top: 8px;
+              font-weight: bold;
+              text-decoration: underline;
+              text-decoration-style: solid;
+              text-decoration-thickness: 2px;
+              text-underline-offset: 1px;
+              cursor: pointer;
+            }
+          }
+          @media (max-width: 600px) {
+            padding: 24px 16px 0px;
+          }
+          .btn-container {
+            button {
+              max-width: 320px;
+              width: 100%;
+              background-image: unset;
+              @media (max-width: 600px) {
+                max-width: unset;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
