@@ -1,0 +1,112 @@
+image: node:14.17.1
+
+pipelines:
+  branches:
+    develop:
+      - step:
+          name: Prepating
+          caches:
+            - node
+          script:
+            - echo "Ready to deploy"
+      - step:
+          name: Build & Deploy to Dev environment
+          deployment: Test
+          trigger: manual
+          caches:
+            - node
+          script:
+            - npm install
+            - npm install -g pm2
+            - pm2 deploy ecosystem.config.js development setup
+            - pm2 deploy ecosystem.config.js development --force
+    dev3.0:
+      - step:
+          name: Prepating
+          caches:
+            - node
+          script:
+            - echo "Ready to deploy"
+      - step:
+          name: Build & Deploy to Dev 3.0 environment
+          deployment: Test
+          trigger: manual
+          caches:
+            - node
+          script:
+            - npm install
+            - npm install -g pm2
+            - pm2 deploy ecosystem.config.js dev3.0 setup
+            - pm2 deploy ecosystem.config.js dev3.0 --force
+    nwa:
+      - step:
+          name: Preparing
+          caches:
+            - node
+          script:
+            - echo "Ready to deploy"
+      - step:
+          name: Build & Deploy to NWA environment
+          deployment: Test
+          trigger: manual
+          caches:
+            - node
+          script:
+            - npm install
+            - npm install -g pm2
+            - pm2 deploy ecosystem.config.js nwa setup
+            - pm2 deploy ecosystem.config.js nwa --force
+    master:
+      - step:
+          name: Preparing
+          caches:
+            - node
+          script:
+            - echo "Ready to deploy"
+      - step:
+          name: Build & Deploy to Production environment
+          deployment: Production
+          trigger: manual
+          caches:
+            - node
+          script:
+            - npm install
+            - npm install -g pm2
+            - pm2 deploy ecosystem.config.js production setup
+            - pm2 deploy ecosystem.config.js production --force
+    main:
+      - step:
+          name: Preparing
+          caches:
+            - node
+          script:
+            - echo "Ready to deploy"
+      - step:
+          name: Build & Deploy to Production environment
+          deployment: Main
+          trigger: manual
+          caches:
+            - node
+          script:
+            - npm install
+            - npm install -g pm2
+            - pm2 deploy ecosystem.config.js main setup
+            - pm2 deploy ecosystem.config.js main --force
+    mainB:
+      - step:
+          name: Preparing
+          caches:
+            - node
+          script:
+            - echo "Ready to deploy"
+      - step:
+          name: Build & Deploy to Production CLONE environment
+          deployment: MainB
+          trigger: manual
+          caches:
+            - node
+          script:
+            - npm install
+            - npm install -g pm2
+            - pm2 deploy ecosystem.config.js mainB setup
+            - pm2 deploy ecosystem.config.js mainB --force
